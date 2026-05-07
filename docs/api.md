@@ -34,3 +34,13 @@
 - `update_state(prev_state, new_model)`
 
 以约束语义哈希为粒度，仅增量替换变更约束子图。
+
+## GNN / GCN 编码器
+
+- `graph_to_tensors(graph, bucket_dim=32)`
+- `GraphEncoder(bucket_dim=32, hidden_dim=64, num_layers=2, dropout=0.1)`
+- `GraphPair(left, right, label)`
+- `train_encoder(pairs, ...)`
+- `compare_graphs(model, left, right)`
+
+训练方式是监督式图对比学习：`label=1.0` 表示相等或等价，`label=0.0` 表示不等价。编码后的向量可直接用余弦相似度做比对。

@@ -25,6 +25,24 @@ graph = parse_and_build_graph("model.fzn")
 write_graph_json(graph, "graph.json")
 ```
 
+## GNN/GCN encoder
+
+```python
+from cp2graph.api import parse_and_build_graph
+from cp2graph.gnn import GraphPair, compare_graphs, train_encoder
+
+g1 = parse_and_build_graph("a.fzn")
+g2 = parse_and_build_graph("b.fzn")
+
+model, history = train_encoder(
+    [GraphPair(g1, g1, 1.0), GraphPair(g1, g2, 0.0)],
+    epochs=10,
+)
+score = compare_graphs(model, g1, g2)
+```
+
+Install the ML extra with `pip install -e .[ml]` if PyTorch is not already available.
+
 ## 输出格式
 
 `JSON` 字段固定为：
