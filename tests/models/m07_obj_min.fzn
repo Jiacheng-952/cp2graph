@@ -1,0 +1,4 @@
+﻿var 0..10: cost;
+var 0..10: y;
+constraint int_lin_eq([1,1],[cost,y],10);
+solve minimize cost;

@@ -1,0 +1,5 @@
+﻿var 0..5: x;
+var 0..5: y;
+var bool: b;
+constraint int_eq_reif(x,y,b);
+solve satisfy;

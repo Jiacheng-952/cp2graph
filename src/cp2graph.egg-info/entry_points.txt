@@ -1,0 +1,2 @@
+[console_scripts]
+cp2graph = cp2graph.cli:main

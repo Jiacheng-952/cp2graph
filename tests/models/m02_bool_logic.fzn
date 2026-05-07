@@ -1,0 +1,4 @@
+﻿var bool: b1;
+var bool: b2;
+constraint bool_or(b1,b2,true);
+solve satisfy;

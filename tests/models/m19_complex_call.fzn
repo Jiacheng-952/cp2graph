@@ -1,0 +1,4 @@
+﻿var 0..10: x;
+var 0..10: y;
+constraint int_eq(x,abs(y));
+solve satisfy;

@@ -1,0 +1,27 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+      - name: Run tests with coverage
+        run: |
+          pytest --cov=cp2graph --cov-branch --cov-report=xml --cov-fail-under=90
+      - name: Run performance benchmark
+        run: |
+          python scripts/benchmark.py --max-seconds 2.0 --lines 10000
+      - name: Run hash collision sampling
+        run: |
+          python scripts/hash_collision_check.py --samples 10000 --seed 42

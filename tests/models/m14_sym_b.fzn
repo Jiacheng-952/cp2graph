@@ -1,0 +1,4 @@
+﻿var 0..9: y2;
+var 0..9: y1;
+constraint int_plus(y1,y2,9);
+solve satisfy;

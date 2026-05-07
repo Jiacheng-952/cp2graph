@@ -1,0 +1,3 @@
+﻿var -5..5: profit;
+constraint int_le(-2,profit);
+solve maximize profit;

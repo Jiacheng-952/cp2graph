@@ -1,0 +1,3 @@
+﻿var 0..5: x;
+constraint int_le(x,5)::domain;
+solve :: int_search([x],input_order,indomain_min,complete) satisfy;

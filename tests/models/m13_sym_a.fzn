@@ -1,0 +1,4 @@
+﻿var 0..9: x1;
+var 0..9: x2;
+constraint int_plus(x1,x2,9);
+solve satisfy;

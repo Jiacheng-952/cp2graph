@@ -1,0 +1,4 @@
+﻿var 0..10: x;
+constraint int_le(x,8);
+constraint int_le(x,8);
+solve satisfy;
