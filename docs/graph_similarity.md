@@ -31,6 +31,8 @@ result = score_graph_pair(g1, g2)
 
 - `structure_score`
 - `wl_similarity`
+- `ted_similarity`
+- `collapse_match_similarity`
 - `jaccard_similarity`
 - `fusion_score`
 - `passed_filter`
@@ -74,6 +76,7 @@ results = index.rank(parse_and_build_graph("tests/models/m04_element.fzn"), top_
 当前项目里已经有一部分类似能力：
 
 - `normalize_model` 会按语义哈希去重重复约束
+- `normalize_model` 还会提取 `shared_subexpressions`，把重复子表达式折叠成共享引用
 
 后续如果要更接近论文，可以继续补：
 
@@ -95,7 +98,12 @@ results = index.rank(parse_and_build_graph("tests/models/m04_element.fzn"), top_
 ## 为什么没有直接照搬 TED / Collapse-Match
 
 论文的方法主要面向树结构。  
-当前项目的核心对象是 CP 二分图，所以第一版先保留图原生的方法，避免把树算法硬塞进图结构里。
+当前项目的核心对象是 CP 二分图，所以这里实现的是**图近似版**：
+
+- `graph_ted_similarity`：用规范化节点序列的编辑距离近似 TED
+- `graph_collapse_match_similarity`：用节点最佳匹配和共享子表达式重叠近似 CM
+
+这样既保留论文的思路，又不强行把树算法硬塞进图结构里。
 
 后续如果要增强精细匹配，可以再加：
 

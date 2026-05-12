@@ -103,7 +103,11 @@ results = index.rank(parse_and_build_graph("tests/models/m04_element.fzn"), top_
 
 - `WL` 结构粗筛
 - 结构兼容性过滤
+- `TED` 图近似
+- `Collapse-Match` 图近似
 - 标签 `Jaccard` 重叠
 - 自适应融合排序
+
+同时，`normalize_model` 已加入 graph-CSE 风格的共享子表达式折叠，会把重复子结构提取到 `shared_subexpressions` 中，供后续比较阶段复用。
 
 设计说明见 [docs/graph_similarity.md](docs/graph_similarity.md)。

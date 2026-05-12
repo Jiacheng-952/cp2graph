@@ -3,6 +3,9 @@ from pathlib import Path
 import pytest
 
 from cp2graph.api import parse_and_build_graph, parse_model_text_to_graph
+from cp2graph.graph_builder import build_constraint_graph
+from cp2graph.normalize import normalize_model
+from cp2graph.parser import FlatZincParser
 from cp2graph.similarity import (
     GraphSimilarityConfig,
     GraphSimilarityIndex,
@@ -21,6 +24,8 @@ def test_score_graph_pair_is_perfect_on_identical_graphs() -> None:
     score = score_graph_pair(graph, graph)
 
     assert pytest.approx(score.wl_similarity, rel=1e-6) == 1.0
+    assert pytest.approx(score.ted_similarity, rel=1e-6) == 1.0
+    assert pytest.approx(score.collapse_match_similarity, rel=1e-6) == 1.0
     assert pytest.approx(score.jaccard_similarity, rel=1e-6) == 1.0
     assert pytest.approx(score.fusion_score, rel=1e-6) == score.structure_score
     assert score.passed_filter is True
@@ -37,6 +42,8 @@ def test_similarity_index_ranks_self_first() -> None:
     assert results
     assert results[0].candidate_id == "middle"
     assert results[0].fusion_score >= 0.0
+    assert results[0].ted_similarity <= 1.0
+    assert results[0].collapse_match_similarity <= 1.0
 
 
 def test_structural_filter_rejects_large_shape_gap() -> None:
@@ -70,3 +77,23 @@ def test_structural_filter_rejects_large_shape_gap() -> None:
 
     assert passes_structural_filter(small_summary, large_summary, config) is False
 
+
+def test_graph_cse_preserves_shared_subexpression_structure() -> None:
+    parser = FlatZincParser()
+    model = parser.parse_text(
+        """
+        var 0..10: x;
+        var 0..10: y;
+        constraint int_lin_eq([1,2,1,2],[x,y,x,y],6);
+        constraint int_lin_ne([1,2,1,2],[x,y,x,y],5);
+        solve satisfy;
+        """.strip(),
+    )
+    normalized = normalize_model(model)
+
+    assert normalized.shared_subexpressions
+    assert any("shared_ref" in repr(constraint.params) for constraint in normalized.constraints)
+
+    graph = build_constraint_graph(normalized)
+    assert graph.number_of_edges() > 0
+    assert graph.graph.get("shared_subexpressions")

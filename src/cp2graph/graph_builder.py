@@ -8,21 +8,29 @@ from .hash_utils import semantic_hash
 from .models import CPModelIR
 
 
-def _iter_vars(value: Any) -> Iterable[str]:
+def _iter_vars(value: Any, shared_subexpressions: Dict[str, Any] | None = None, seen_refs: Set[str] | None = None) -> Iterable[str]:
+    if seen_refs is None:
+        seen_refs = set()
     if isinstance(value, list):
         for item in value:
-            yield from _iter_vars(item)
+            yield from _iter_vars(item, shared_subexpressions, seen_refs)
     elif isinstance(value, dict):
         if "var" in value:
             yield value["var"]
+        if "shared_ref" in value and shared_subexpressions is not None:
+            ref = value["shared_ref"]
+            if ref in shared_subexpressions and ref not in seen_refs:
+                seen_refs.add(ref)
+                yield from _iter_vars(shared_subexpressions[ref], shared_subexpressions, seen_refs)
         for inner in value.values():
-            yield from _iter_vars(inner)
+            if isinstance(inner, (list, dict)):
+                yield from _iter_vars(inner, shared_subexpressions, seen_refs)
 
 
-def _variable_roles_for_constraint(ctype: str, params: Any) -> Dict[str, str]:
+def _variable_roles_for_constraint(ctype: str, params: Any, shared_subexpressions: Dict[str, Any] | None = None) -> Dict[str, str]:
     vars_in_order: List[str] = []
     seen: Set[str] = set()
-    for name in _iter_vars(params):
+    for name in _iter_vars(params, shared_subexpressions):
         if name not in seen:
             seen.add(name)
             vars_in_order.append(name)
@@ -35,6 +43,8 @@ def _variable_roles_for_constraint(ctype: str, params: Any) -> Dict[str, str]:
 
 def build_constraint_graph(model: CPModelIR) -> nx.MultiDiGraph:
     g = nx.MultiDiGraph()
+    if model.shared_subexpressions:
+        g.graph["shared_subexpressions"] = dict(model.shared_subexpressions)
     for var in model.variables.values():
         g.add_node(
             var.id,
@@ -60,7 +70,7 @@ def build_constraint_graph(model: CPModelIR) -> nx.MultiDiGraph:
             size=None,
             semantic_hash=c_hash,
         )
-        roles = _variable_roles_for_constraint(constraint.ctype, constraint.params)
+        roles = _variable_roles_for_constraint(constraint.ctype, constraint.params, model.shared_subexpressions)
         for var_name, role in roles.items():
             if var_name in model.variables:
                 g.add_edge(var_name, node_id, src=var_name, dst=node_id, role=role)
