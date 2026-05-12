@@ -72,16 +72,20 @@ python scripts/hash_collision_check.py --samples 10000 --seed 42
 
 ## 图相似度检索
 
-第一版的图相似度检索模块已经放在 `cp2graph.similarity` 中。
+第一版的图相似度模块已经放在 `cp2graph.similarity` 中，既支持**两个图直接比较**，也支持**图库检索**。
 
-当前支持的流程是：
+两个图直接比较时，使用：
 
-- `WL` 结构粗筛
-- 结构兼容性过滤
-- 标签 `Jaccard` 重叠
-- 自适应融合排序
+```python
+from cp2graph.api import parse_and_build_graph
+from cp2graph.similarity import score_graph_pair
 
-示例：
+g1 = parse_and_build_graph("a.fzn")
+g2 = parse_and_build_graph("b.fzn")
+result = score_graph_pair(g1, g2)
+```
+
+如果你有一个图库，并希望对一个查询图做 Top-k 检索，则使用：
 
 ```python
 from cp2graph.api import parse_and_build_graph
@@ -94,5 +98,12 @@ library = {
 index = GraphSimilarityIndex(library)
 results = index.rank(parse_and_build_graph("tests/models/m04_element.fzn"), top_k=5)
 ```
+
+当前支持的核心流程是：
+
+- `WL` 结构粗筛
+- 结构兼容性过滤
+- 标签 `Jaccard` 重叠
+- 自适应融合排序
 
 设计说明见 [docs/graph_similarity.md](docs/graph_similarity.md)。

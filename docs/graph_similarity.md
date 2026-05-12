@@ -1,52 +1,33 @@
-# 图相似度检索设计
+# 图相似度模块全貌
 
-本模块建立在现有 `cp2graph` 图构建能力之上，为 CP 模型提供一层图相似度检索与排序能力。
+这个模块建立在现有 `cp2graph` 图构建能力之上，用来比较两个 CP 图是否相似，也可以扩展成图库检索。
 
-## 设计目标
+## 项目整体逻辑
 
-- 保留 FlatZinc / MiniZinc 到二分图的构图流程
-- 在图层面支持快速相似度匹配
-- 为后续分类、检索、排序、候选召回提供统一入口
-- 预留第二阶段的更精细图编辑距离近似能力
+1. 先把 FlatZinc / MiniZinc 编译后的 IR 解析成 CP 模型。
+2. 再把 CP 模型转换成“变量节点 - 约束节点”的二分图。
+3. 在图层上做相似度计算、结构过滤、候选排序。
+4. 需要时再接入 GNN/GCN 编码器，做更强的向量表示和下游任务。
 
-## 已复用的部分
+换句话说，当前项目不是只做“建图”，也不是只做“检索”，而是把这两层连起来。
 
-- `parse_and_build_graph`：负责把 CP 模型解析并构造成图
-- `normalize_model`：负责模型规范化
-- `graph_builder`：负责变量节点、约束节点及边关系的生成
+## 当前支持的两种用法
 
-## 新增的部分
+### 1. 两个图直接比较
 
-`cp2graph.similarity` 提供以下能力：
-
-- `WL` 特征提取
-- 结构兼容性过滤
-- 标签 `Jaccard` 重叠计算
-- 自适应融合排序
-- 候选集索引与检索接口
-
-## 第一版流程
-
-1. 预先准备一个图库，每个 CP 模型对应一个图。
-2. 离线计算每个图的 `WL` 特征和标签集合。
-3. 查询时先做结构兼容性过滤，排除规模差异过大的候选。
-4. 对剩余候选计算：
-   - `WL` 相似度
-   - 标签 `Jaccard` 相似度
-   - 融合得分
-5. 按融合得分排序，输出 Top-k 结果。
-
-这一版是“图原生”的实现，不依赖树结构，因此还没有引入论文中的 `TED` 和 `Collapse-Match`。
-
-## 核心 API
+这是你现在最常用的场景。
 
 ```python
-from cp2graph.similarity import GraphSimilarityIndex, score_graph_pair
+from cp2graph.api import parse_and_build_graph
+from cp2graph.similarity import score_graph_pair
+
+g1 = parse_and_build_graph("a.fzn")
+g2 = parse_and_build_graph("b.fzn")
+
+result = score_graph_pair(g1, g2)
 ```
 
-### `score_graph_pair(left, right, config=None)`
-
-返回两个图的相似度结果，包含：
+它会直接返回两个图的相似度分数，包括：
 
 - `structure_score`
 - `wl_similarity`
@@ -54,51 +35,81 @@ from cp2graph.similarity import GraphSimilarityIndex, score_graph_pair
 - `fusion_score`
 - `passed_filter`
 
-### `GraphSimilarityIndex(graphs, config=None)`
+### 2. 图库检索
 
-接收一个图库，参数可以是：
+当你手头有很多 CP 模型时，可以把每个模型都预先构造成图，放入图库，然后对一个 query 图做 Top-k 检索。
 
-- `{"id": graph, ...}`
-- `[(id, graph), ...]`
+```python
+from cp2graph.api import parse_and_build_graph
+from cp2graph.similarity import GraphSimilarityIndex
 
-### `rank(query, top_k=None, coarse_top_k=None)`
+library = {
+    "m01": parse_and_build_graph("tests/models/m01_arith.fzn"),
+    "m03": parse_and_build_graph("tests/models/m03_all_diff.fzn"),
+}
+index = GraphSimilarityIndex(library)
+results = index.rank(parse_and_build_graph("tests/models/m04_element.fzn"), top_k=5)
+```
 
-对查询图进行检索排序，返回候选结果列表。
+## 第一版流程
 
-## 特征解释
+第一版的相似度模块采用的是“先粗筛、再融合排序”的思路：
 
-### `WL` 特征
+1. 先做结构兼容性过滤，排除规模差距过大的图。
+2. 再计算 `WL` 相似度，抓住局部结构。
+3. 再计算标签 `Jaccard`，衡量图中结构原子的重叠。
+4. 最后把这些指标融合成一个最终分数。
 
-`WL` 特征用于捕捉图的局部结构模式。它把节点的邻域信息逐轮聚合，形成可比较的结构向量，适合做粗筛。
+这套流程既适用于两图比较，也适用于图库检索。
 
-### 结构兼容性过滤
+## CSE 的借鉴方式
 
-这一层用于提前剔除明显不可能相似的候选，例如：
+论文里的 CSE 是表达式树上的“相同子表达式消除”。  
+在 CP 图里可以类比成：
 
-- 节点数差距过大
-- 边数差距过大
-- 变量节点或约束节点数量差异过大
+- 重复约束子结构折叠
+- 重复邻域模式归并
+- 对高频子图做规范化表示
 
-### 标签 `Jaccard`
+当前项目里已经有一部分类似能力：
 
-这一项用于衡量两个图在“标签集合”上的重叠程度。当前主要看：
+- `normalize_model` 会按语义哈希去重重复约束
 
-- 节点类型
-- 约束类型
-- 域信息
-- 常量与参数中的结构性原子
+后续如果要更接近论文，可以继续补：
 
-### 自适应融合
+- 重复子图折叠
+- 局部结构缓存
+- 更精细的子图规范化
 
-最终排序不是单一指标，而是把结构得分、`WL` 相似度和 `Jaccard` 重叠综合起来，形成更稳健的融合分数。
+## 新增模块
 
-## 第二阶段预留
+`cp2graph.similarity` 提供：
 
-论文里的 `TED` 和 `Collapse-Match` 更偏向树结构。若后续要继续增强 CP 图的精细比对能力，可以考虑：
+- `WL` 特征提取
+- 结构兼容性过滤
+- 标签 `Jaccard` 重叠
+- 自适应融合排序
+- 两图比较接口
+- 图库检索接口
+
+## 为什么没有直接照搬 TED / Collapse-Match
+
+论文的方法主要面向树结构。  
+当前项目的核心对象是 CP 二分图，所以第一版先保留图原生的方法，避免把树算法硬塞进图结构里。
+
+后续如果要增强精细匹配，可以再加：
 
 - 图编辑距离近似
-- 二分图锚点对齐
+- 锚点对齐
 - 子图折叠匹配
-- 约束子结构的局部一致性比较
 
-这些能力可以作为第二阶段加入，不需要改动现有解析器和图构建器。
+## 你现在应该怎么理解这个项目
+
+可以把它看成三层：
+
+1. **解析层**：把 CP 模型变成图
+2. **比较层**：判断两个图是否相似
+3. **检索层**：在图库里找最像的图
+
+你现在最直接用的是第 2 层。  
+第 3 层是第 2 层的批量版。
