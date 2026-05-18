@@ -1,0 +1,33 @@
+{
+  "data_file": "ossp_5j_5m_0016.json",
+  "status": "OPTIMAL",
+  "solve_time": 0.013256200000000001,
+  "makespan": 58,
+  "start_times": {
+    "job_0_machine_0": 0,
+    "job_0_machine_1": 21,
+    "job_0_machine_2": 35,
+    "job_0_machine_3": 9,
+    "job_0_machine_4": 26,
+    "job_1_machine_0": 9,
+    "job_1_machine_1": 26,
+    "job_1_machine_2": 13,
+    "job_1_machine_3": 0,
+    "job_1_machine_4": 19,
+    "job_2_machine_0": 48,
+    "job_2_machine_1": 6,
+    "job_2_machine_2": 0,
+    "job_2_machine_3": 21,
+    "job_2_machine_4": 35,
+    "job_3_machine_0": 14,
+    "job_3_machine_1": 35,
+    "job_3_machine_2": 23,
+    "job_3_machine_3": 47,
+    "job_3_machine_4": 0,
+    "job_4_machine_0": 23,
+    "job_4_machine_1": 0,
+    "job_4_machine_2": 6,
+    "job_4_machine_3": 35,
+    "job_4_machine_4": 14
+  }
+}

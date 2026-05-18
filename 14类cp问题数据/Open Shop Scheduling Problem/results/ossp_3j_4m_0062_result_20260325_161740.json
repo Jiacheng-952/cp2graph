@@ -1,0 +1,20 @@
+{
+  "data_file": "ossp_3j_4m_0062.json",
+  "status": "OPTIMAL",
+  "solve_time": 0.0138887,
+  "makespan": 51,
+  "start_times": {
+    "job_0_machine_0": 22,
+    "job_0_machine_1": 38,
+    "job_0_machine_2": 16,
+    "job_0_machine_3": 0,
+    "job_1_machine_0": 0,
+    "job_1_machine_1": 33,
+    "job_1_machine_2": 23,
+    "job_1_machine_3": 17,
+    "job_2_machine_0": 36,
+    "job_2_machine_1": 16,
+    "job_2_machine_2": 0,
+    "job_2_machine_3": 28
+  }
+}

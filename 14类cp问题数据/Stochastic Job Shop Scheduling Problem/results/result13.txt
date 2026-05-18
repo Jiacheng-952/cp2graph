@@ -1,0 +1,39 @@
+Robust Makespan: 88
+Machine Sequences (fixed order across scenarios):
+  Machine 0: 5 -> 4 -> 0 -> 2 -> 1 -> 3
+  Machine 1: 1 -> 5 -> 4 -> 2 -> 3 -> 0
+  Machine 2: 5 -> 0 -> 3 -> 4 -> 1 -> 2
+  Machine 3: 0 -> 4 -> 3 -> 1 -> 5 -> 2
+  Machine 4: 2 -> 0 -> 5 -> 3 -> 4 -> 1
+
+Schedule (scenario 0):
+  Job0 Op0 on M3: start=0, duration=6
+  Job0 Op1 on M2: start=12, duration=12
+  Job0 Op2 on M4: start=31, duration=7
+  Job0 Op3 on M0: start=38, duration=4
+  Job0 Op4 on M1: start=72, duration=14
+  Job1 Op0 on M1: start=2, duration=7
+  Job1 Op1 on M3: start=24, duration=14
+  Job1 Op2 on M0: start=50, duration=5
+  Job1 Op3 on M2: start=55, duration=15
+  Job1 Op4 on M4: start=73, duration=15
+  Job2 Op0 on M4: start=2, duration=9
+  Job2 Op1 on M0: start=43, duration=7
+  Job2 Op2 on M1: start=60, duration=7
+  Job2 Op3 on M3: start=67, duration=7
+  Job2 Op4 on M2: start=74, duration=11
+  Job3 Op0 on M3: start=16, duration=5
+  Job3 Op1 on M2: start=25, duration=7
+  Job3 Op2 on M4: start=49, duration=8
+  Job3 Op3 on M0: start=59, duration=7
+  Job3 Op4 on M1: start=67, duration=5
+  Job4 Op0 on M3: start=7, duration=9
+  Job4 Op1 on M0: start=23, duration=9
+  Job4 Op2 on M2: start=32, duration=13
+  Job4 Op3 on M1: start=45, duration=15
+  Job4 Op4 on M4: start=60, duration=12
+  Job5 Op0 on M2: start=0, duration=12
+  Job5 Op1 on M0: start=12, duration=10
+  Job5 Op2 on M1: start=24, duration=15
+  Job5 Op3 on M4: start=39, duration=10
+  Job5 Op4 on M3: start=49, duration=12

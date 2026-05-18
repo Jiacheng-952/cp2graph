@@ -1,0 +1,50 @@
+Status: Feasible
+Objective: 3627.00
+Solve Time: 0.01 sec
+
+=== Assignment ===
+
+Restaurant Rest_1
+  Shift Shift_1
+    Skill Skill_2: 1 -> Emp_12
+  Shift Shift_2
+    Skill Skill_2: 1 -> Emp_11
+
+Restaurant Rest_2
+  Shift Shift_1
+    Skill Skill_2: 4 -> Emp_4, Emp_6, Emp_9, Emp_13
+  Shift Shift_2
+    Skill Skill_2: 2 -> Emp_1, Emp_10
+
+Restaurant Rest_3
+  Shift Shift_1
+  Shift Shift_2
+    Skill Skill_1: 2 -> Emp_7, Emp_8
+
+Restaurant Rest_4
+  Shift Shift_1
+  Shift Shift_2
+
+Restaurant Rest_5
+  Shift Shift_1
+    Skill Skill_2: 1 -> Emp_3
+  Shift Shift_2
+
+=== Unfulfilled Demand ===
+Rest_1, Shift_1, Skill_1: 2
+Rest_1, Shift_1, Skill_2: 1
+Rest_1, Shift_2, Skill_1: 3
+Rest_1, Shift_2, Skill_2: 2
+Rest_2, Shift_1, Skill_1: 3
+Rest_2, Shift_2, Skill_1: 2
+Rest_3, Shift_1, Skill_1: 2
+Rest_3, Shift_1, Skill_2: 2
+Rest_3, Shift_2, Skill_1: 1
+Rest_3, Shift_2, Skill_2: 3
+Rest_4, Shift_1, Skill_1: 2
+Rest_4, Shift_1, Skill_2: 2
+Rest_4, Shift_2, Skill_1: 2
+Rest_4, Shift_2, Skill_2: 3
+Rest_5, Shift_1, Skill_1: 3
+Rest_5, Shift_2, Skill_1: 2
+Rest_5, Shift_2, Skill_2: 1

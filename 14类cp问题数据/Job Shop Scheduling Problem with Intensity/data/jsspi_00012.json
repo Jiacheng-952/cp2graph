@@ -1,0 +1,374 @@
+{
+  "id": "jsspi_00012",
+  "num_jobs": 8,
+  "num_machines": 8,
+  "max_intensity": 29,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 6,
+          "intensity": 6
+        },
+        {
+          "machine": 1,
+          "duration": 66,
+          "intensity": 5
+        },
+        {
+          "machine": 0,
+          "duration": 63,
+          "intensity": 4
+        },
+        {
+          "machine": 6,
+          "duration": 76,
+          "intensity": 1
+        },
+        {
+          "machine": 4,
+          "duration": 23,
+          "intensity": 8
+        },
+        {
+          "machine": 5,
+          "duration": 52,
+          "intensity": 3
+        },
+        {
+          "machine": 2,
+          "duration": 48,
+          "intensity": 4
+        },
+        {
+          "machine": 7,
+          "duration": 12,
+          "intensity": 4
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 7,
+          "duration": 12,
+          "intensity": 4
+        },
+        {
+          "machine": 6,
+          "duration": 16,
+          "intensity": 7
+        },
+        {
+          "machine": 0,
+          "duration": 61,
+          "intensity": 2
+        },
+        {
+          "machine": 3,
+          "duration": 59,
+          "intensity": 3
+        },
+        {
+          "machine": 2,
+          "duration": 74,
+          "intensity": 6
+        },
+        {
+          "machine": 5,
+          "duration": 76,
+          "intensity": 3
+        },
+        {
+          "machine": 4,
+          "duration": 11,
+          "intensity": 3
+        },
+        {
+          "machine": 1,
+          "duration": 69,
+          "intensity": 2
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 74,
+          "intensity": 1
+        },
+        {
+          "machine": 2,
+          "duration": 15,
+          "intensity": 4
+        },
+        {
+          "machine": 1,
+          "duration": 38,
+          "intensity": 6
+        },
+        {
+          "machine": 5,
+          "duration": 51,
+          "intensity": 7
+        },
+        {
+          "machine": 7,
+          "duration": 44,
+          "intensity": 2
+        },
+        {
+          "machine": 3,
+          "duration": 37,
+          "intensity": 4
+        },
+        {
+          "machine": 4,
+          "duration": 47,
+          "intensity": 6
+        },
+        {
+          "machine": 6,
+          "duration": 52,
+          "intensity": 3
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 10,
+          "intensity": 7
+        },
+        {
+          "machine": 1,
+          "duration": 31,
+          "intensity": 2
+        },
+        {
+          "machine": 5,
+          "duration": 75,
+          "intensity": 4
+        },
+        {
+          "machine": 4,
+          "duration": 27,
+          "intensity": 2
+        },
+        {
+          "machine": 7,
+          "duration": 40,
+          "intensity": 1
+        },
+        {
+          "machine": 6,
+          "duration": 60,
+          "intensity": 5
+        },
+        {
+          "machine": 3,
+          "duration": 68,
+          "intensity": 6
+        },
+        {
+          "machine": 0,
+          "duration": 11,
+          "intensity": 8
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 35,
+          "intensity": 3
+        },
+        {
+          "machine": 4,
+          "duration": 64,
+          "intensity": 6
+        },
+        {
+          "machine": 6,
+          "duration": 28,
+          "intensity": 4
+        },
+        {
+          "machine": 3,
+          "duration": 33,
+          "intensity": 1
+        },
+        {
+          "machine": 7,
+          "duration": 39,
+          "intensity": 6
+        },
+        {
+          "machine": 2,
+          "duration": 27,
+          "intensity": 4
+        },
+        {
+          "machine": 1,
+          "duration": 6,
+          "intensity": 1
+        },
+        {
+          "machine": 5,
+          "duration": 36,
+          "intensity": 2
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 20,
+          "intensity": 4
+        },
+        {
+          "machine": 2,
+          "duration": 72,
+          "intensity": 8
+        },
+        {
+          "machine": 7,
+          "duration": 67,
+          "intensity": 6
+        },
+        {
+          "machine": 0,
+          "duration": 38,
+          "intensity": 8
+        },
+        {
+          "machine": 1,
+          "duration": 25,
+          "intensity": 8
+        },
+        {
+          "machine": 6,
+          "duration": 42,
+          "intensity": 1
+        },
+        {
+          "machine": 4,
+          "duration": 40,
+          "intensity": 6
+        },
+        {
+          "machine": 5,
+          "duration": 70,
+          "intensity": 8
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 8,
+          "intensity": 3
+        },
+        {
+          "machine": 7,
+          "duration": 76,
+          "intensity": 5
+        },
+        {
+          "machine": 0,
+          "duration": 58,
+          "intensity": 3
+        },
+        {
+          "machine": 6,
+          "duration": 35,
+          "intensity": 4
+        },
+        {
+          "machine": 4,
+          "duration": 60,
+          "intensity": 8
+        },
+        {
+          "machine": 2,
+          "duration": 12,
+          "intensity": 5
+        },
+        {
+          "machine": 5,
+          "duration": 10,
+          "intensity": 7
+        },
+        {
+          "machine": 3,
+          "duration": 60,
+          "intensity": 2
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 77,
+          "intensity": 3
+        },
+        {
+          "machine": 3,
+          "duration": 7,
+          "intensity": 3
+        },
+        {
+          "machine": 5,
+          "duration": 8,
+          "intensity": 1
+        },
+        {
+          "machine": 2,
+          "duration": 14,
+          "intensity": 7
+        },
+        {
+          "machine": 4,
+          "duration": 73,
+          "intensity": 4
+        },
+        {
+          "machine": 1,
+          "duration": 53,
+          "intensity": 2
+        },
+        {
+          "machine": 7,
+          "duration": 50,
+          "intensity": 4
+        },
+        {
+          "machine": 6,
+          "duration": 44,
+          "intensity": 5
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      5,
+      80
+    ],
+    "intensity_range": [
+      1,
+      8
+    ],
+    "generated_at": "2026-03-16T17:31:07.237739",
+    "difficulty": "medium",
+    "capacity_factor": 2.14
+  }
+}

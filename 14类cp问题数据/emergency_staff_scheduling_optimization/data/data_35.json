@@ -1,0 +1,188 @@
+{
+    "Shifts": [
+        "Mon1",
+        "Tue2",
+        "Wed3",
+        "Thu4",
+        "Fri5",
+        "Sat6",
+        "Sun7",
+        "Mon8",
+        "Tue9",
+        "Wed10",
+        "Thu11",
+        "Fri12",
+        "Sat13",
+        "Sun14"
+    ],
+    "shiftRequirements": {
+        "Mon1": 4,
+        "Tue2": 3,
+        "Wed3": 5,
+        "Thu4": 2,
+        "Fri5": 2,
+        "Sat6": 8,
+        "Sun7": 4,
+        "Mon8": 4,
+        "Tue9": 5,
+        "Wed10": 8,
+        "Thu11": 3,
+        "Fri12": 6,
+        "Sat13": 3,
+        "Sun14": 4
+    },
+    "Workers": [
+        "Nurse1",
+        "Nurse2",
+        "Nurse3",
+        "Nurse4",
+        "Nurse5",
+        "Nurse6",
+        "Nurse7",
+        "Nurse8",
+        "Nurse9",
+        "Nurse10"
+    ],
+    "SeniorNurses": [
+        "Nurse10",
+        "Nurse3",
+        "Nurse8"
+    ],
+    "Availability": {
+        "Nurse1": [
+            "Fri12",
+            "Mon1",
+            "Sat6",
+            "Sun14",
+            "Sun7",
+            "Thu11",
+            "Thu4",
+            "Tue9",
+            "Wed10",
+            "Wed3"
+        ],
+        "Nurse2": [
+            "Mon1",
+            "Mon8",
+            "Sat13",
+            "Sat6",
+            "Sun14",
+            "Sun7",
+            "Thu4",
+            "Tue2",
+            "Wed10"
+        ],
+        "Nurse3": [
+            "Fri12",
+            "Fri5",
+            "Mon1",
+            "Mon8",
+            "Sat13",
+            "Sat6",
+            "Sun14",
+            "Sun7",
+            "Thu11",
+            "Thu4",
+            "Tue2",
+            "Tue9",
+            "Wed10",
+            "Wed3"
+        ],
+        "Nurse4": [
+            "Fri12",
+            "Fri5",
+            "Mon1",
+            "Sat6",
+            "Sun14",
+            "Sun7",
+            "Thu11",
+            "Thu4",
+            "Tue2",
+            "Wed10",
+            "Wed3"
+        ],
+        "Nurse5": [
+            "Fri5",
+            "Mon8",
+            "Sat13",
+            "Sat6",
+            "Sun14",
+            "Sun7",
+            "Thu11",
+            "Thu4",
+            "Wed10"
+        ],
+        "Nurse6": [
+            "Sat13",
+            "Sat6",
+            "Sun14",
+            "Thu11",
+            "Thu4",
+            "Tue2",
+            "Wed10"
+        ],
+        "Nurse7": [
+            "Fri12",
+            "Fri5",
+            "Mon8",
+            "Sun14",
+            "Thu11",
+            "Thu4",
+            "Tue2",
+            "Tue9",
+            "Wed10"
+        ],
+        "Nurse8": [
+            "Fri12",
+            "Mon1",
+            "Mon8",
+            "Sat13",
+            "Sat6",
+            "Sun14",
+            "Thu11",
+            "Tue9"
+        ],
+        "Nurse9": [
+            "Fri12",
+            "Sat6",
+            "Sun7",
+            "Tue2",
+            "Tue9",
+            "Wed10",
+            "Wed3"
+        ],
+        "Nurse10": [
+            "Mon8",
+            "Sat13",
+            "Sat6",
+            "Sun7",
+            "Tue2",
+            "Wed10",
+            "Wed3"
+        ]
+    },
+    "pay": {
+        "Nurse1": 10,
+        "Nurse2": 13,
+        "Nurse3": 16,
+        "Nurse4": 13,
+        "Nurse5": 9,
+        "Nurse6": 9,
+        "Nurse7": 10,
+        "Nurse8": 15,
+        "Nurse9": 13,
+        "Nurse10": 14
+    },
+    "Positions": {
+        "Nurse10": "Senior",
+        "Nurse3": "Senior",
+        "Nurse8": "Senior",
+        "Nurse6": "Trainee",
+        "Nurse5": "Trainee",
+        "Nurse1": "Regular",
+        "Nurse2": "Regular",
+        "Nurse4": "Regular",
+        "Nurse7": "Regular",
+        "Nurse9": "Regular"
+    }
+}

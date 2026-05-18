@@ -1,0 +1,981 @@
+{
+  "metadata": {
+    "instance_id": 50,
+    "generated_time": "2026-01-27 11:15:32",
+    "n_restaurants": 4,
+    "n_employees": 18,
+    "n_shifts": 4,
+    "n_skills": 2,
+    "unfulfilled_cost": 100,
+    "parameters": {
+      "demand_range": [
+        1,
+        4
+      ],
+      "skill_probability": 0.7,
+      "availability_probability": 0.8,
+      "preference_range": [
+        1,
+        5
+      ]
+    }
+  },
+  "sets": {
+    "restaurants": [
+      "Rest_1",
+      "Rest_2",
+      "Rest_3",
+      "Rest_4"
+    ],
+    "employees": [
+      "Emp_1",
+      "Emp_2",
+      "Emp_3",
+      "Emp_4",
+      "Emp_5",
+      "Emp_6",
+      "Emp_7",
+      "Emp_8",
+      "Emp_9",
+      "Emp_10",
+      "Emp_11",
+      "Emp_12",
+      "Emp_13",
+      "Emp_14",
+      "Emp_15",
+      "Emp_16",
+      "Emp_17",
+      "Emp_18"
+    ],
+    "shifts": [
+      "Shift_1",
+      "Shift_2",
+      "Shift_3",
+      "Shift_4"
+    ],
+    "skills": [
+      "Skill_1",
+      "Skill_2"
+    ]
+  },
+  "demand": [
+    {
+      "restaurant": "Rest_1",
+      "shift": "Shift_1",
+      "skill": "Skill_1",
+      "required": 1
+    },
+    {
+      "restaurant": "Rest_1",
+      "shift": "Shift_1",
+      "skill": "Skill_2",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_1",
+      "shift": "Shift_2",
+      "skill": "Skill_1",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_1",
+      "shift": "Shift_2",
+      "skill": "Skill_2",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_1",
+      "shift": "Shift_3",
+      "skill": "Skill_1",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_1",
+      "shift": "Shift_3",
+      "skill": "Skill_2",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_1",
+      "shift": "Shift_4",
+      "skill": "Skill_1",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_1",
+      "shift": "Shift_4",
+      "skill": "Skill_2",
+      "required": 1
+    },
+    {
+      "restaurant": "Rest_2",
+      "shift": "Shift_1",
+      "skill": "Skill_1",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_2",
+      "shift": "Shift_1",
+      "skill": "Skill_2",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_2",
+      "shift": "Shift_2",
+      "skill": "Skill_1",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_2",
+      "shift": "Shift_2",
+      "skill": "Skill_2",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_2",
+      "shift": "Shift_3",
+      "skill": "Skill_1",
+      "required": 2
+    },
+    {
+      "restaurant": "Rest_2",
+      "shift": "Shift_3",
+      "skill": "Skill_2",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_2",
+      "shift": "Shift_4",
+      "skill": "Skill_1",
+      "required": 1
+    },
+    {
+      "restaurant": "Rest_2",
+      "shift": "Shift_4",
+      "skill": "Skill_2",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_3",
+      "shift": "Shift_1",
+      "skill": "Skill_1",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_3",
+      "shift": "Shift_1",
+      "skill": "Skill_2",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_3",
+      "shift": "Shift_2",
+      "skill": "Skill_1",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_3",
+      "shift": "Shift_2",
+      "skill": "Skill_2",
+      "required": 1
+    },
+    {
+      "restaurant": "Rest_3",
+      "shift": "Shift_3",
+      "skill": "Skill_1",
+      "required": 2
+    },
+    {
+      "restaurant": "Rest_3",
+      "shift": "Shift_3",
+      "skill": "Skill_2",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_3",
+      "shift": "Shift_4",
+      "skill": "Skill_1",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_3",
+      "shift": "Shift_4",
+      "skill": "Skill_2",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_4",
+      "shift": "Shift_1",
+      "skill": "Skill_1",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_4",
+      "shift": "Shift_1",
+      "skill": "Skill_2",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_4",
+      "shift": "Shift_2",
+      "skill": "Skill_1",
+      "required": 2
+    },
+    {
+      "restaurant": "Rest_4",
+      "shift": "Shift_2",
+      "skill": "Skill_2",
+      "required": 3
+    },
+    {
+      "restaurant": "Rest_4",
+      "shift": "Shift_3",
+      "skill": "Skill_1",
+      "required": 2
+    },
+    {
+      "restaurant": "Rest_4",
+      "shift": "Shift_3",
+      "skill": "Skill_2",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_4",
+      "shift": "Shift_4",
+      "skill": "Skill_1",
+      "required": 4
+    },
+    {
+      "restaurant": "Rest_4",
+      "shift": "Shift_4",
+      "skill": "Skill_2",
+      "required": 2
+    }
+  ],
+  "employee_skills": [
+    {
+      "employee": "Emp_1",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_1",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_2",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_2",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_3",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_3",
+      "skill": "Skill_2",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_4",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_4",
+      "skill": "Skill_2",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_5",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_5",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_6",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_6",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_7",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_7",
+      "skill": "Skill_2",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_8",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_8",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_9",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_9",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_10",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_10",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_11",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_11",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_12",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_12",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_13",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_13",
+      "skill": "Skill_2",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_14",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_14",
+      "skill": "Skill_2",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_15",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_15",
+      "skill": "Skill_2",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_16",
+      "skill": "Skill_1",
+      "has_skill": 0
+    },
+    {
+      "employee": "Emp_16",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_17",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_17",
+      "skill": "Skill_2",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_18",
+      "skill": "Skill_1",
+      "has_skill": 1
+    },
+    {
+      "employee": "Emp_18",
+      "skill": "Skill_2",
+      "has_skill": 0
+    }
+  ],
+  "employee_availability": [
+    {
+      "employee": "Emp_1",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_1",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_1",
+      "shift": "Shift_3",
+      "available": 0
+    },
+    {
+      "employee": "Emp_1",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_2",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_2",
+      "shift": "Shift_2",
+      "available": 0
+    },
+    {
+      "employee": "Emp_2",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_2",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_3",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_3",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_3",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_3",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_4",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_4",
+      "shift": "Shift_2",
+      "available": 0
+    },
+    {
+      "employee": "Emp_4",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_4",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_5",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_5",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_5",
+      "shift": "Shift_3",
+      "available": 0
+    },
+    {
+      "employee": "Emp_5",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_6",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_6",
+      "shift": "Shift_2",
+      "available": 0
+    },
+    {
+      "employee": "Emp_6",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_6",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_7",
+      "shift": "Shift_1",
+      "available": 0
+    },
+    {
+      "employee": "Emp_7",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_7",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_7",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_8",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_8",
+      "shift": "Shift_2",
+      "available": 0
+    },
+    {
+      "employee": "Emp_8",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_8",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_9",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_9",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_9",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_9",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_10",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_10",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_10",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_10",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_11",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_11",
+      "shift": "Shift_2",
+      "available": 0
+    },
+    {
+      "employee": "Emp_11",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_11",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_12",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_12",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_12",
+      "shift": "Shift_3",
+      "available": 0
+    },
+    {
+      "employee": "Emp_12",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_13",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_13",
+      "shift": "Shift_2",
+      "available": 0
+    },
+    {
+      "employee": "Emp_13",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_13",
+      "shift": "Shift_4",
+      "available": 0
+    },
+    {
+      "employee": "Emp_14",
+      "shift": "Shift_1",
+      "available": 0
+    },
+    {
+      "employee": "Emp_14",
+      "shift": "Shift_2",
+      "available": 0
+    },
+    {
+      "employee": "Emp_14",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_14",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_15",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_15",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_15",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_15",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_16",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_16",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_16",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_16",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_17",
+      "shift": "Shift_1",
+      "available": 0
+    },
+    {
+      "employee": "Emp_17",
+      "shift": "Shift_2",
+      "available": 1
+    },
+    {
+      "employee": "Emp_17",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_17",
+      "shift": "Shift_4",
+      "available": 1
+    },
+    {
+      "employee": "Emp_18",
+      "shift": "Shift_1",
+      "available": 1
+    },
+    {
+      "employee": "Emp_18",
+      "shift": "Shift_2",
+      "available": 0
+    },
+    {
+      "employee": "Emp_18",
+      "shift": "Shift_3",
+      "available": 1
+    },
+    {
+      "employee": "Emp_18",
+      "shift": "Shift_4",
+      "available": 0
+    }
+  ],
+  "preference_costs": [
+    {
+      "employee": "Emp_1",
+      "skill": "Skill_1",
+      "cost": 2
+    },
+    {
+      "employee": "Emp_1",
+      "skill": "Skill_2",
+      "cost": 1
+    },
+    {
+      "employee": "Emp_2",
+      "skill": "Skill_1",
+      "cost": 4
+    },
+    {
+      "employee": "Emp_2",
+      "skill": "Skill_2",
+      "cost": 5
+    },
+    {
+      "employee": "Emp_3",
+      "skill": "Skill_1",
+      "cost": 3
+    },
+    {
+      "employee": "Emp_3",
+      "skill": "Skill_2",
+      "cost": 5
+    },
+    {
+      "employee": "Emp_4",
+      "skill": "Skill_1",
+      "cost": 2
+    },
+    {
+      "employee": "Emp_4",
+      "skill": "Skill_2",
+      "cost": 1
+    },
+    {
+      "employee": "Emp_5",
+      "skill": "Skill_1",
+      "cost": 5
+    },
+    {
+      "employee": "Emp_5",
+      "skill": "Skill_2",
+      "cost": 1
+    },
+    {
+      "employee": "Emp_6",
+      "skill": "Skill_1",
+      "cost": 2
+    },
+    {
+      "employee": "Emp_6",
+      "skill": "Skill_2",
+      "cost": 2
+    },
+    {
+      "employee": "Emp_7",
+      "skill": "Skill_1",
+      "cost": 3
+    },
+    {
+      "employee": "Emp_7",
+      "skill": "Skill_2",
+      "cost": 1
+    },
+    {
+      "employee": "Emp_8",
+      "skill": "Skill_1",
+      "cost": 5
+    },
+    {
+      "employee": "Emp_8",
+      "skill": "Skill_2",
+      "cost": 4
+    },
+    {
+      "employee": "Emp_9",
+      "skill": "Skill_1",
+      "cost": 4
+    },
+    {
+      "employee": "Emp_9",
+      "skill": "Skill_2",
+      "cost": 5
+    },
+    {
+      "employee": "Emp_10",
+      "skill": "Skill_1",
+      "cost": 2
+    },
+    {
+      "employee": "Emp_10",
+      "skill": "Skill_2",
+      "cost": 1
+    },
+    {
+      "employee": "Emp_11",
+      "skill": "Skill_1",
+      "cost": 3
+    },
+    {
+      "employee": "Emp_11",
+      "skill": "Skill_2",
+      "cost": 3
+    },
+    {
+      "employee": "Emp_12",
+      "skill": "Skill_1",
+      "cost": 5
+    },
+    {
+      "employee": "Emp_12",
+      "skill": "Skill_2",
+      "cost": 4
+    },
+    {
+      "employee": "Emp_13",
+      "skill": "Skill_1",
+      "cost": 3
+    },
+    {
+      "employee": "Emp_13",
+      "skill": "Skill_2",
+      "cost": 4
+    },
+    {
+      "employee": "Emp_14",
+      "skill": "Skill_1",
+      "cost": 2
+    },
+    {
+      "employee": "Emp_14",
+      "skill": "Skill_2",
+      "cost": 1
+    },
+    {
+      "employee": "Emp_15",
+      "skill": "Skill_1",
+      "cost": 5
+    },
+    {
+      "employee": "Emp_15",
+      "skill": "Skill_2",
+      "cost": 2
+    },
+    {
+      "employee": "Emp_16",
+      "skill": "Skill_1",
+      "cost": 4
+    },
+    {
+      "employee": "Emp_16",
+      "skill": "Skill_2",
+      "cost": 4
+    },
+    {
+      "employee": "Emp_17",
+      "skill": "Skill_1",
+      "cost": 1
+    },
+    {
+      "employee": "Emp_17",
+      "skill": "Skill_2",
+      "cost": 2
+    },
+    {
+      "employee": "Emp_18",
+      "skill": "Skill_1",
+      "cost": 5
+    },
+    {
+      "employee": "Emp_18",
+      "skill": "Skill_2",
+      "cost": 5
+    }
+  ]
+}

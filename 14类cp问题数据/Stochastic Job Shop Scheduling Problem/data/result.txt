@@ -1,0 +1,39 @@
+optimal_value = 85
+objective = 85
+result = 85
+Machine Sequences:
+  Machine 0: 3 -> 0 -> 5 -> 2 -> 4 -> 1
+    job_3 on mach_0
+    job_0 on mach_0
+    job_5 on mach_0
+    job_2 on mach_0
+    job_4 on mach_0
+    job_1 on mach_0
+  Machine 1: 4 -> 5 -> 2 -> 1 -> 0 -> 3
+    job_4 on mach_1
+    job_5 on mach_1
+    job_2 on mach_1
+    job_1 on mach_1
+    job_0 on mach_1
+    job_3 on mach_1
+  Machine 2: 4 -> 2 -> 0 -> 3 -> 1 -> 5
+    job_4 on mach_2
+    job_2 on mach_2
+    job_0 on mach_2
+    job_3 on mach_2
+    job_1 on mach_2
+    job_5 on mach_2
+  Machine 3: 1 -> 4 -> 5 -> 0 -> 3 -> 2
+    job_1 on mach_3
+    job_4 on mach_3
+    job_5 on mach_3
+    job_0 on mach_3
+    job_3 on mach_3
+    job_2 on mach_3
+  Machine 4: 5 -> 0 -> 1 -> 3 -> 2 -> 4
+    job_5 on mach_4
+    job_0 on mach_4
+    job_1 on mach_4
+    job_3 on mach_4
+    job_2 on mach_4
+    job_4 on mach_4

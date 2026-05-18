@@ -1,0 +1,7 @@
+Robust Makespan: 83.00
+Machine Sequences:
+Machine 0: 2 -> 1 -> 5 -> 4 -> 0 -> 3
+Machine 1: 0 -> 3 -> 2 -> 4 -> 5 -> 1
+Machine 2: 1 -> 5 -> 2 -> 4 -> 3 -> 0
+Machine 3: 3 -> 0 -> 1 -> 2 -> 4 -> 5
+Machine 4: 3 -> 0 -> 1 -> 5 -> 4 -> 2
