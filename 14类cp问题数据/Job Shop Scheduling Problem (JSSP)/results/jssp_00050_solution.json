@@ -1,0 +1,136 @@
+{
+  "instance_id": "jssp_00050",
+  "status": "OPTIMAL",
+  "makespan": 121,
+  "time": 0.01091313362121582,
+  "results": [
+    {
+      "job": 0,
+      "task": 0,
+      "machine": 0,
+      "start": 0,
+      "duration": 21,
+      "end": 21
+    },
+    {
+      "job": 0,
+      "task": 1,
+      "machine": 2,
+      "start": 21,
+      "duration": 29,
+      "end": 50
+    },
+    {
+      "job": 0,
+      "task": 2,
+      "machine": 1,
+      "start": 50,
+      "duration": 8,
+      "end": 58
+    },
+    {
+      "job": 0,
+      "task": 3,
+      "machine": 3,
+      "start": 62,
+      "duration": 23,
+      "end": 85
+    },
+    {
+      "job": 1,
+      "task": 0,
+      "machine": 2,
+      "start": 0,
+      "duration": 18,
+      "end": 18
+    },
+    {
+      "job": 1,
+      "task": 1,
+      "machine": 0,
+      "start": 21,
+      "duration": 11,
+      "end": 32
+    },
+    {
+      "job": 1,
+      "task": 2,
+      "machine": 1,
+      "start": 32,
+      "duration": 8,
+      "end": 40
+    },
+    {
+      "job": 1,
+      "task": 3,
+      "machine": 3,
+      "start": 40,
+      "duration": 22,
+      "end": 62
+    },
+    {
+      "job": 2,
+      "task": 0,
+      "machine": 2,
+      "start": 61,
+      "duration": 27,
+      "end": 88
+    },
+    {
+      "job": 2,
+      "task": 1,
+      "machine": 1,
+      "start": 88,
+      "duration": 4,
+      "end": 92
+    },
+    {
+      "job": 2,
+      "task": 2,
+      "machine": 3,
+      "start": 92,
+      "duration": 12,
+      "end": 104
+    },
+    {
+      "job": 2,
+      "task": 3,
+      "machine": 0,
+      "start": 104,
+      "duration": 11,
+      "end": 115
+    },
+    {
+      "job": 3,
+      "task": 0,
+      "machine": 3,
+      "start": 0,
+      "duration": 28,
+      "end": 28
+    },
+    {
+      "job": 3,
+      "task": 1,
+      "machine": 2,
+      "start": 50,
+      "duration": 11,
+      "end": 61
+    },
+    {
+      "job": 3,
+      "task": 2,
+      "machine": 0,
+      "start": 61,
+      "duration": 20,
+      "end": 81
+    },
+    {
+      "job": 3,
+      "task": 3,
+      "machine": 1,
+      "start": 92,
+      "duration": 29,
+      "end": 121
+    }
+  ]
+}

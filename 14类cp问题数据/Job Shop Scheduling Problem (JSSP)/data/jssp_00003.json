@@ -1,0 +1,240 @@
+{
+  "id": "jssp_00003",
+  "num_jobs": 7,
+  "num_machines": 7,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 79
+        },
+        {
+          "machine": 2,
+          "duration": 13
+        },
+        {
+          "machine": 3,
+          "duration": 6
+        },
+        {
+          "machine": 6,
+          "duration": 65
+        },
+        {
+          "machine": 5,
+          "duration": 38
+        },
+        {
+          "machine": 4,
+          "duration": 75
+        },
+        {
+          "machine": 1,
+          "duration": 34
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 34
+        },
+        {
+          "machine": 0,
+          "duration": 24
+        },
+        {
+          "machine": 6,
+          "duration": 71
+        },
+        {
+          "machine": 4,
+          "duration": 54
+        },
+        {
+          "machine": 3,
+          "duration": 6
+        },
+        {
+          "machine": 5,
+          "duration": 13
+        },
+        {
+          "machine": 1,
+          "duration": 25
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 65
+        },
+        {
+          "machine": 1,
+          "duration": 54
+        },
+        {
+          "machine": 5,
+          "duration": 59
+        },
+        {
+          "machine": 2,
+          "duration": 55
+        },
+        {
+          "machine": 0,
+          "duration": 78
+        },
+        {
+          "machine": 4,
+          "duration": 61
+        },
+        {
+          "machine": 6,
+          "duration": 22
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 6,
+          "duration": 38
+        },
+        {
+          "machine": 4,
+          "duration": 60
+        },
+        {
+          "machine": 3,
+          "duration": 43
+        },
+        {
+          "machine": 1,
+          "duration": 58
+        },
+        {
+          "machine": 5,
+          "duration": 69
+        },
+        {
+          "machine": 0,
+          "duration": 54
+        },
+        {
+          "machine": 2,
+          "duration": 78
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 48
+        },
+        {
+          "machine": 0,
+          "duration": 8
+        },
+        {
+          "machine": 6,
+          "duration": 40
+        },
+        {
+          "machine": 3,
+          "duration": 25
+        },
+        {
+          "machine": 5,
+          "duration": 46
+        },
+        {
+          "machine": 4,
+          "duration": 74
+        },
+        {
+          "machine": 2,
+          "duration": 78
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 13
+        },
+        {
+          "machine": 5,
+          "duration": 66
+        },
+        {
+          "machine": 6,
+          "duration": 66
+        },
+        {
+          "machine": 2,
+          "duration": 16
+        },
+        {
+          "machine": 1,
+          "duration": 49
+        },
+        {
+          "machine": 0,
+          "duration": 13
+        },
+        {
+          "machine": 4,
+          "duration": 57
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 4,
+          "duration": 10
+        },
+        {
+          "machine": 5,
+          "duration": 10
+        },
+        {
+          "machine": 6,
+          "duration": 53
+        },
+        {
+          "machine": 3,
+          "duration": 80
+        },
+        {
+          "machine": 2,
+          "duration": 47
+        },
+        {
+          "machine": 0,
+          "duration": 75
+        },
+        {
+          "machine": 1,
+          "duration": 40
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      5,
+      80
+    ],
+    "generated_at": "2026-03-16T17:30:53.499262",
+    "difficulty": "medium"
+  }
+}

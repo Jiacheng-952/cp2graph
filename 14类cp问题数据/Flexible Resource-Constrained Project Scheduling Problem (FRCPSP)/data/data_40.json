@@ -1,0 +1,331 @@
+{
+    "num_tasks": 20,
+    "num_resources": 3,
+    "capacities": [
+        4,
+        5,
+        2
+    ],
+    "tasks": [
+        {
+            "id": 1,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 8,
+                    "weight": 1
+                },
+                {
+                    "resource": 1,
+                    "duration": 3,
+                    "weight": 4
+                },
+                {
+                    "resource": 2,
+                    "duration": 14,
+                    "weight": 1
+                }
+            ],
+            "successors": [
+                2,
+                4,
+                16
+            ]
+        },
+        {
+            "id": 2,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 11,
+                    "weight": 4
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 3,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 14,
+                    "weight": 4
+                },
+                {
+                    "resource": 1,
+                    "duration": 3,
+                    "weight": 4
+                },
+                {
+                    "resource": 2,
+                    "duration": 6,
+                    "weight": 1
+                }
+            ],
+            "successors": [
+                16,
+                20
+            ]
+        },
+        {
+            "id": 4,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 14,
+                    "weight": 4
+                },
+                {
+                    "resource": 2,
+                    "duration": 2,
+                    "weight": 1
+                }
+            ],
+            "successors": [
+                10,
+                13,
+                18
+            ]
+        },
+        {
+            "id": 5,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 13,
+                    "weight": 1
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 6,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 5,
+                    "weight": 1
+                },
+                {
+                    "resource": 2,
+                    "duration": 10,
+                    "weight": 1
+                }
+            ],
+            "successors": [
+                13,
+                20
+            ]
+        },
+        {
+            "id": 7,
+            "modes": [
+                {
+                    "resource": 1,
+                    "duration": 12,
+                    "weight": 3
+                }
+            ],
+            "successors": [
+                9,
+                16
+            ]
+        },
+        {
+            "id": 8,
+            "modes": [
+                {
+                    "resource": 2,
+                    "duration": 1,
+                    "weight": 2
+                }
+            ],
+            "successors": [
+                18
+            ]
+        },
+        {
+            "id": 9,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 7,
+                    "weight": 4
+                },
+                {
+                    "resource": 1,
+                    "duration": 7,
+                    "weight": 4
+                },
+                {
+                    "resource": 2,
+                    "duration": 19,
+                    "weight": 2
+                }
+            ],
+            "successors": [
+                18,
+                20
+            ]
+        },
+        {
+            "id": 10,
+            "modes": [
+                {
+                    "resource": 1,
+                    "duration": 2,
+                    "weight": 3
+                }
+            ],
+            "successors": [
+                12
+            ]
+        },
+        {
+            "id": 11,
+            "modes": [
+                {
+                    "resource": 1,
+                    "duration": 9,
+                    "weight": 5
+                },
+                {
+                    "resource": 2,
+                    "duration": 18,
+                    "weight": 2
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 12,
+            "modes": [
+                {
+                    "resource": 1,
+                    "duration": 10,
+                    "weight": 2
+                },
+                {
+                    "resource": 2,
+                    "duration": 5,
+                    "weight": 2
+                }
+            ],
+            "successors": [
+                15,
+                18,
+                19
+            ]
+        },
+        {
+            "id": 13,
+            "modes": [
+                {
+                    "resource": 1,
+                    "duration": 6,
+                    "weight": 5
+                },
+                {
+                    "resource": 2,
+                    "duration": 18,
+                    "weight": 2
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 14,
+            "modes": [
+                {
+                    "resource": 1,
+                    "duration": 4,
+                    "weight": 2
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 15,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 12,
+                    "weight": 1
+                },
+                {
+                    "resource": 1,
+                    "duration": 10,
+                    "weight": 1
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 16,
+            "modes": [
+                {
+                    "resource": 2,
+                    "duration": 4,
+                    "weight": 1
+                }
+            ],
+            "successors": [
+                18
+            ]
+        },
+        {
+            "id": 17,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 10,
+                    "weight": 4
+                },
+                {
+                    "resource": 1,
+                    "duration": 19,
+                    "weight": 5
+                },
+                {
+                    "resource": 2,
+                    "duration": 7,
+                    "weight": 1
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 18,
+            "modes": [
+                {
+                    "resource": 2,
+                    "duration": 18,
+                    "weight": 1
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 19,
+            "modes": [
+                {
+                    "resource": 0,
+                    "duration": 5,
+                    "weight": 1
+                }
+            ],
+            "successors": []
+        },
+        {
+            "id": 20,
+            "modes": [
+                {
+                    "resource": 2,
+                    "duration": 5,
+                    "weight": 2
+                }
+            ],
+            "successors": []
+        }
+    ]
+}

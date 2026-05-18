@@ -1,0 +1,80 @@
+{
+  "instance_id": "ossp_3j_3m_0054.json",
+  "status": "OPTIMAL",
+  "makespan": 26,
+  "time": 0.01631307601928711,
+  "results": [
+    {
+      "job": 0,
+      "operation": 0,
+      "machine": 0,
+      "start": 10,
+      "duration": 5,
+      "end": 15
+    },
+    {
+      "job": 0,
+      "operation": 1,
+      "machine": 1,
+      "start": 15,
+      "duration": 7,
+      "end": 22
+    },
+    {
+      "job": 0,
+      "operation": 2,
+      "machine": 2,
+      "start": 0,
+      "duration": 10,
+      "end": 10
+    },
+    {
+      "job": 1,
+      "operation": 0,
+      "machine": 0,
+      "start": 17,
+      "duration": 6,
+      "end": 23
+    },
+    {
+      "job": 1,
+      "operation": 1,
+      "machine": 1,
+      "start": 0,
+      "duration": 6,
+      "end": 6
+    },
+    {
+      "job": 1,
+      "operation": 2,
+      "machine": 2,
+      "start": 10,
+      "duration": 7,
+      "end": 17
+    },
+    {
+      "job": 2,
+      "operation": 0,
+      "machine": 0,
+      "start": 0,
+      "duration": 7,
+      "end": 7
+    },
+    {
+      "job": 2,
+      "operation": 1,
+      "machine": 1,
+      "start": 7,
+      "duration": 5,
+      "end": 12
+    },
+    {
+      "job": 2,
+      "operation": 2,
+      "machine": 2,
+      "start": 17,
+      "duration": 9,
+      "end": 26
+    }
+  ]
+}

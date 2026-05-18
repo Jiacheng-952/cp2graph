@@ -1,0 +1,232 @@
+{
+  "id": "jssp_00012",
+  "num_jobs": 6,
+  "num_machines": 8,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 6
+        },
+        {
+          "machine": 1,
+          "duration": 52
+        },
+        {
+          "machine": 0,
+          "duration": 66
+        },
+        {
+          "machine": 6,
+          "duration": 40
+        },
+        {
+          "machine": 4,
+          "duration": 63
+        },
+        {
+          "machine": 5,
+          "duration": 34
+        },
+        {
+          "machine": 2,
+          "duration": 76
+        },
+        {
+          "machine": 7,
+          "duration": 5
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 4,
+          "duration": 78
+        },
+        {
+          "machine": 6,
+          "duration": 30
+        },
+        {
+          "machine": 0,
+          "duration": 14
+        },
+        {
+          "machine": 5,
+          "duration": 70
+        },
+        {
+          "machine": 1,
+          "duration": 48
+        },
+        {
+          "machine": 7,
+          "duration": 56
+        },
+        {
+          "machine": 3,
+          "duration": 16
+        },
+        {
+          "machine": 2,
+          "duration": 7
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 61
+        },
+        {
+          "machine": 3,
+          "duration": 19
+        },
+        {
+          "machine": 7,
+          "duration": 59
+        },
+        {
+          "machine": 1,
+          "duration": 22
+        },
+        {
+          "machine": 4,
+          "duration": 74
+        },
+        {
+          "machine": 5,
+          "duration": 45
+        },
+        {
+          "machine": 6,
+          "duration": 76
+        },
+        {
+          "machine": 0,
+          "duration": 25
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 65
+        },
+        {
+          "machine": 2,
+          "duration": 66
+        },
+        {
+          "machine": 5,
+          "duration": 54
+        },
+        {
+          "machine": 7,
+          "duration": 74
+        },
+        {
+          "machine": 6,
+          "duration": 8
+        },
+        {
+          "machine": 1,
+          "duration": 15
+        },
+        {
+          "machine": 4,
+          "duration": 29
+        },
+        {
+          "machine": 0,
+          "duration": 38
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 4,
+          "duration": 35
+        },
+        {
+          "machine": 1,
+          "duration": 47
+        },
+        {
+          "machine": 0,
+          "duration": 51
+        },
+        {
+          "machine": 6,
+          "duration": 52
+        },
+        {
+          "machine": 3,
+          "duration": 70
+        },
+        {
+          "machine": 7,
+          "duration": 78
+        },
+        {
+          "machine": 2,
+          "duration": 69
+        },
+        {
+          "machine": 5,
+          "duration": 27
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 10
+        },
+        {
+          "machine": 1,
+          "duration": 54
+        },
+        {
+          "machine": 5,
+          "duration": 31
+        },
+        {
+          "machine": 4,
+          "duration": 18
+        },
+        {
+          "machine": 7,
+          "duration": 75
+        },
+        {
+          "machine": 6,
+          "duration": 33
+        },
+        {
+          "machine": 3,
+          "duration": 27
+        },
+        {
+          "machine": 0,
+          "duration": 14
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      5,
+      80
+    ],
+    "generated_at": "2026-03-16T17:30:53.524428",
+    "difficulty": "medium"
+  }
+}

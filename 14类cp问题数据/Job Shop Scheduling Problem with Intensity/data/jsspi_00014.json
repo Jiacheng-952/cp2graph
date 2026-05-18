@@ -1,0 +1,117 @@
+{
+  "id": "jsspi_00014",
+  "num_jobs": 5,
+  "num_machines": 3,
+  "max_intensity": 6,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 9,
+          "intensity": 3
+        },
+        {
+          "machine": 2,
+          "duration": 10,
+          "intensity": 1
+        },
+        {
+          "machine": 0,
+          "duration": 22,
+          "intensity": 4
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 22,
+          "intensity": 4
+        },
+        {
+          "machine": 2,
+          "duration": 13,
+          "intensity": 1
+        },
+        {
+          "machine": 1,
+          "duration": 9,
+          "intensity": 2
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 26,
+          "intensity": 3
+        },
+        {
+          "machine": 2,
+          "duration": 12,
+          "intensity": 5
+        },
+        {
+          "machine": 1,
+          "duration": 5,
+          "intensity": 2
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 6,
+          "intensity": 1
+        },
+        {
+          "machine": 1,
+          "duration": 21,
+          "intensity": 1
+        },
+        {
+          "machine": 2,
+          "duration": 4,
+          "intensity": 5
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 3,
+          "intensity": 3
+        },
+        {
+          "machine": 0,
+          "duration": 7,
+          "intensity": 4
+        },
+        {
+          "machine": 1,
+          "duration": 13,
+          "intensity": 5
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      1,
+      30
+    ],
+    "intensity_range": [
+      1,
+      5
+    ],
+    "generated_at": "2026-03-16T17:31:07.245510",
+    "difficulty": "easy",
+    "capacity_factor": 2.47
+  }
+}

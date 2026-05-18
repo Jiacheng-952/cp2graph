@@ -1,0 +1,119 @@
+{
+  "instance_name": "复杂_3",
+  "difficulty": "复杂",
+  "seed": 10021,
+  "stations": [
+    {
+      "id": 0,
+      "capacity": 2,
+      "duration": 2,
+      "y": 0.15233527861768925
+    },
+    {
+      "id": 2,
+      "capacity": 2,
+      "duration": 2,
+      "y": 5.540461133187835
+    },
+    {
+      "id": 4,
+      "capacity": 2,
+      "duration": 2,
+      "y": 9.279961854253544
+    },
+    {
+      "id": 6,
+      "capacity": 2,
+      "duration": 2,
+      "y": 15.632991918693666
+    },
+    {
+      "id": 8,
+      "capacity": 2,
+      "duration": 2,
+      "y": 19.79437477477903
+    }
+  ],
+  "tracks": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 2,
+      "capacity": 1,
+      "duration": 4
+    },
+    {
+      "id": 3,
+      "start": 2,
+      "end": 4,
+      "capacity": 1,
+      "duration": 4
+    },
+    {
+      "id": 5,
+      "start": 4,
+      "end": 6,
+      "capacity": 1,
+      "duration": 5
+    },
+    {
+      "id": 7,
+      "start": 6,
+      "end": 8,
+      "capacity": 1,
+      "duration": 4
+    }
+  ],
+  "routes": [
+    {
+      "id": 0,
+      "resources": "0-1-2-3-4-5-6-7-8"
+    },
+    {
+      "id": 1,
+      "resources": "8-7-6-5-4-3-2-1-0"
+    }
+  ],
+  "trains": [
+    {
+      "id": "A",
+      "route": 0,
+      "start": 0
+    },
+    {
+      "id": "B",
+      "route": 0,
+      "start": 0
+    },
+    {
+      "id": "C",
+      "route": 1,
+      "start": 8
+    },
+    {
+      "id": "D",
+      "route": 1,
+      "start": 8
+    }
+  ],
+  "maintenance": {
+    "track_id": 7,
+    "start_time": 77,
+    "end_time": 97,
+    "duration": 20,
+    "track_info": {
+      "start_station": 6,
+      "end_station": 8,
+      "track_duration": 4
+    },
+    "affected_trains": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "unaffected_trains": [],
+    "latest_pass_time": 25,
+    "max_completion_time": 27
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "instance_id": "jssp_00044",
+  "status": "OPTIMAL",
+  "makespan": 35,
+  "time": 0.013382673263549805,
+  "results": [
+    {
+      "job": 0,
+      "task": 0,
+      "machine": 0,
+      "start": 0,
+      "duration": 17,
+      "end": 17
+    },
+    {
+      "job": 0,
+      "task": 1,
+      "machine": 1,
+      "start": 17,
+      "duration": 18,
+      "end": 35
+    },
+    {
+      "job": 1,
+      "task": 0,
+      "machine": 1,
+      "start": 0,
+      "duration": 6,
+      "end": 6
+    },
+    {
+      "job": 1,
+      "task": 1,
+      "machine": 0,
+      "start": 17,
+      "duration": 13,
+      "end": 30
+    },
+    {
+      "job": 2,
+      "task": 0,
+      "machine": 1,
+      "start": 6,
+      "duration": 10,
+      "end": 16
+    },
+    {
+      "job": 2,
+      "task": 1,
+      "machine": 0,
+      "start": 30,
+      "duration": 1,
+      "end": 31
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+optimal_value = 641
+result = 641
+
+--- 手术安排 ---
+surgery_0_start = 480, surgery_0_end = 526, surgery_0_room = 4, surgery_0_nurses = [1]
+surgery_1_start = 480, surgery_1_end = 541, surgery_1_room = 2, surgery_1_nurses = [13]
+surgery_2_start = 480, surgery_2_end = 513, surgery_2_room = 0, surgery_2_nurses = [9]
+surgery_3_start = 526, surgery_3_end = 622, surgery_3_room = 4, surgery_3_nurses = [1]
+surgery_4_start = 480, surgery_4_end = 512, surgery_4_room = 7, surgery_4_nurses = [5]
+surgery_5_start = 480, surgery_5_end = 545, surgery_5_room = 6, surgery_5_nurses = [12]
+surgery_6_start = 545, surgery_6_end = 634, surgery_6_room = 2, surgery_6_nurses = [0]
+surgery_7_start = 525, surgery_7_end = 641, surgery_7_room = 7, surgery_7_nurses = [5]
+surgery_8_start = 480, surgery_8_end = 544, surgery_8_room = 8, surgery_8_nurses = [4]
+surgery_9_start = 480, surgery_9_end = 518, surgery_9_room = 1, surgery_9_nurses = [6]
+surgery_10_start = 480, surgery_10_end = 587, surgery_10_room = 9, surgery_10_nurses = [14]
+surgery_11_start = 519, surgery_11_end = 550, surgery_11_room = 5, surgery_11_nurses = [8]
+surgery_12_start = 480, surgery_12_end = 530, surgery_12_room = 3, surgery_12_nurses = [10]
+surgery_13_start = 550, surgery_13_end = 607, surgery_13_room = 5, surgery_13_nurses = [12]
+surgery_14_start = 584, surgery_14_end = 641, surgery_14_room = 0, surgery_14_nurses = [6]
+surgery_15_start = 542, surgery_15_end = 600, surgery_15_room = 3, surgery_15_nurses = [2]
+surgery_16_start = 513, surgery_16_end = 568, surgery_16_room = 0, surgery_16_nurses = [11]
+surgery_17_start = 586, surgery_17_end = 641, surgery_17_room = 1, surgery_17_nurses = [4]
+surgery_18_start = 544, surgery_18_end = 641, surgery_18_room = 8, surgery_18_nurses = [13]
+surgery_19_start = 544, surgery_19_end = 586, surgery_19_room = 1, surgery_19_nurses = [3]
+
+solve_time = 0.21 sec

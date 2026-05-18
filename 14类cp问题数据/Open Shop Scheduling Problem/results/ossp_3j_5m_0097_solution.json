@@ -1,0 +1,113 @@
+{
+  "instance_id": "ossp_3j_5m_0097.json",
+  "status": "OPTIMAL",
+  "makespan": 62,
+  "time": 0.01578354835510254,
+  "results": [
+    {
+      "job": 0,
+      "machine": 0,
+      "start": 16,
+      "duration": 15,
+      "end": 31
+    },
+    {
+      "job": 0,
+      "machine": 1,
+      "start": 31,
+      "duration": 14,
+      "end": 45
+    },
+    {
+      "job": 0,
+      "machine": 2,
+      "start": 45,
+      "duration": 9,
+      "end": 54
+    },
+    {
+      "job": 0,
+      "machine": 3,
+      "start": 0,
+      "duration": 16,
+      "end": 16
+    },
+    {
+      "job": 0,
+      "machine": 4,
+      "start": 54,
+      "duration": 8,
+      "end": 62
+    },
+    {
+      "job": 1,
+      "machine": 0,
+      "start": 31,
+      "duration": 8,
+      "end": 39
+    },
+    {
+      "job": 1,
+      "machine": 1,
+      "start": 28,
+      "duration": 2,
+      "end": 30
+    },
+    {
+      "job": 1,
+      "machine": 2,
+      "start": 19,
+      "duration": 9,
+      "end": 28
+    },
+    {
+      "job": 1,
+      "machine": 3,
+      "start": 16,
+      "duration": 3,
+      "end": 19
+    },
+    {
+      "job": 1,
+      "machine": 4,
+      "start": 0,
+      "duration": 16,
+      "end": 16
+    },
+    {
+      "job": 2,
+      "machine": 0,
+      "start": 39,
+      "duration": 4,
+      "end": 43
+    },
+    {
+      "job": 2,
+      "machine": 1,
+      "start": 18,
+      "duration": 8,
+      "end": 26
+    },
+    {
+      "job": 2,
+      "machine": 2,
+      "start": 0,
+      "duration": 18,
+      "end": 18
+    },
+    {
+      "job": 2,
+      "machine": 3,
+      "start": 26,
+      "duration": 11,
+      "end": 37
+    },
+    {
+      "job": 2,
+      "machine": 4,
+      "start": 37,
+      "duration": 2,
+      "end": 39
+    }
+  ]
+}

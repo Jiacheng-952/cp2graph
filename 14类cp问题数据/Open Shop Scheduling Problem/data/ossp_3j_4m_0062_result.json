@@ -1,0 +1,56 @@
+{
+  "data_file": "ossp_3j_4m_0062.json",
+  "status": "OPTIMAL",
+  "solve_time": 0.016184,
+  "makespan": 51,
+  "schedule": {
+    "job_0_machine_0": {
+      "start": 22,
+      "end": 35
+    },
+    "job_0_machine_1": {
+      "start": 38,
+      "end": 45
+    },
+    "job_0_machine_2": {
+      "start": 16,
+      "end": 22
+    },
+    "job_0_machine_3": {
+      "start": 0,
+      "end": 16
+    },
+    "job_1_machine_0": {
+      "start": 0,
+      "end": 17
+    },
+    "job_1_machine_1": {
+      "start": 33,
+      "end": 38
+    },
+    "job_1_machine_2": {
+      "start": 23,
+      "end": 33
+    },
+    "job_1_machine_3": {
+      "start": 17,
+      "end": 23
+    },
+    "job_2_machine_0": {
+      "start": 36,
+      "end": 51
+    },
+    "job_2_machine_1": {
+      "start": 16,
+      "end": 28
+    },
+    "job_2_machine_2": {
+      "start": 0,
+      "end": 16
+    },
+    "job_2_machine_3": {
+      "start": 28,
+      "end": 36
+    }
+  }
+}

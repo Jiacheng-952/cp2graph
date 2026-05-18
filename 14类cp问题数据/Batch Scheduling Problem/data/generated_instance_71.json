@@ -1,0 +1,187 @@
+{
+    "num_tasks": 20,
+    "num_resources": 3,
+    "capacities": [
+        2,
+        5,
+        3
+    ],
+    "tasks": [
+        {
+            "id": 0,
+            "type": 0,
+            "resource": 2,
+            "duration": 13,
+            "successors": [
+                8,
+                11,
+                18
+            ]
+        },
+        {
+            "id": 1,
+            "type": 0,
+            "resource": 2,
+            "duration": 27,
+            "successors": [
+                4
+            ]
+        },
+        {
+            "id": 2,
+            "type": 1,
+            "resource": 1,
+            "duration": 11,
+            "successors": []
+        },
+        {
+            "id": 3,
+            "type": 0,
+            "resource": 0,
+            "duration": 25,
+            "successors": [
+                6,
+                7
+            ]
+        },
+        {
+            "id": 4,
+            "type": 1,
+            "resource": 0,
+            "duration": 22,
+            "successors": [
+                6,
+                7,
+                13
+            ]
+        },
+        {
+            "id": 5,
+            "type": 1,
+            "resource": 0,
+            "duration": 15,
+            "successors": [
+                17,
+                18
+            ]
+        },
+        {
+            "id": 6,
+            "type": 1,
+            "resource": 1,
+            "duration": 25,
+            "successors": [
+                7
+            ]
+        },
+        {
+            "id": 7,
+            "type": 1,
+            "resource": 2,
+            "duration": 17,
+            "successors": [
+                11
+            ]
+        },
+        {
+            "id": 8,
+            "type": 1,
+            "resource": 0,
+            "duration": 19,
+            "successors": [
+                13
+            ]
+        },
+        {
+            "id": 9,
+            "type": 1,
+            "resource": 0,
+            "duration": 28,
+            "successors": []
+        },
+        {
+            "id": 10,
+            "type": 1,
+            "resource": 2,
+            "duration": 23,
+            "successors": [
+                18
+            ]
+        },
+        {
+            "id": 11,
+            "type": 1,
+            "resource": 0,
+            "duration": 18,
+            "successors": [
+                15,
+                16,
+                19
+            ]
+        },
+        {
+            "id": 12,
+            "type": 0,
+            "resource": 0,
+            "duration": 13,
+            "successors": [
+                13
+            ]
+        },
+        {
+            "id": 13,
+            "type": 0,
+            "resource": 2,
+            "duration": 26,
+            "successors": [
+                19
+            ]
+        },
+        {
+            "id": 14,
+            "type": 1,
+            "resource": 1,
+            "duration": 15,
+            "successors": [
+                15
+            ]
+        },
+        {
+            "id": 15,
+            "type": 1,
+            "resource": 0,
+            "duration": 19,
+            "successors": []
+        },
+        {
+            "id": 16,
+            "type": 0,
+            "resource": 0,
+            "duration": 15,
+            "successors": [
+                17
+            ]
+        },
+        {
+            "id": 17,
+            "type": 1,
+            "resource": 2,
+            "duration": 21,
+            "successors": []
+        },
+        {
+            "id": 18,
+            "type": 1,
+            "resource": 2,
+            "duration": 17,
+            "successors": []
+        },
+        {
+            "id": 19,
+            "type": 1,
+            "resource": 2,
+            "duration": 12,
+            "successors": []
+        }
+    ]
+}

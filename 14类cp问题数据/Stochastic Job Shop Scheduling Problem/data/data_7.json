@@ -1,0 +1,259 @@
+{
+    "num_jobs": 6,
+    "num_machines": 5,
+    "num_scenarios": 3,
+    "jobs": [
+        {
+            "job_id": 0,
+            "operations": [
+                4,
+                2,
+                1,
+                0,
+                3
+            ],
+            "scenarios": [
+                {
+                    "scenario_id": 0,
+                    "durations": [
+                        10,
+                        11,
+                        9,
+                        5,
+                        12
+                    ]
+                },
+                {
+                    "scenario_id": 1,
+                    "durations": [
+                        15,
+                        7,
+                        3,
+                        5,
+                        9
+                    ]
+                },
+                {
+                    "scenario_id": 2,
+                    "durations": [
+                        15,
+                        15,
+                        10,
+                        14,
+                        8
+                    ]
+                }
+            ]
+        },
+        {
+            "job_id": 1,
+            "operations": [
+                1,
+                4,
+                2,
+                3,
+                0
+            ],
+            "scenarios": [
+                {
+                    "scenario_id": 0,
+                    "durations": [
+                        10,
+                        9,
+                        3,
+                        12,
+                        12
+                    ]
+                },
+                {
+                    "scenario_id": 1,
+                    "durations": [
+                        10,
+                        10,
+                        14,
+                        14,
+                        7
+                    ]
+                },
+                {
+                    "scenario_id": 2,
+                    "durations": [
+                        12,
+                        12,
+                        4,
+                        10,
+                        8
+                    ]
+                }
+            ]
+        },
+        {
+            "job_id": 2,
+            "operations": [
+                0,
+                3,
+                2,
+                1,
+                4
+            ],
+            "scenarios": [
+                {
+                    "scenario_id": 0,
+                    "durations": [
+                        11,
+                        9,
+                        15,
+                        14,
+                        13
+                    ]
+                },
+                {
+                    "scenario_id": 1,
+                    "durations": [
+                        13,
+                        12,
+                        4,
+                        7,
+                        5
+                    ]
+                },
+                {
+                    "scenario_id": 2,
+                    "durations": [
+                        9,
+                        10,
+                        14,
+                        12,
+                        9
+                    ]
+                }
+            ]
+        },
+        {
+            "job_id": 3,
+            "operations": [
+                3,
+                1,
+                4,
+                2,
+                0
+            ],
+            "scenarios": [
+                {
+                    "scenario_id": 0,
+                    "durations": [
+                        8,
+                        5,
+                        14,
+                        12,
+                        7
+                    ]
+                },
+                {
+                    "scenario_id": 1,
+                    "durations": [
+                        6,
+                        8,
+                        12,
+                        10,
+                        9
+                    ]
+                },
+                {
+                    "scenario_id": 2,
+                    "durations": [
+                        3,
+                        10,
+                        3,
+                        6,
+                        9
+                    ]
+                }
+            ]
+        },
+        {
+            "job_id": 4,
+            "operations": [
+                0,
+                4,
+                2,
+                1,
+                3
+            ],
+            "scenarios": [
+                {
+                    "scenario_id": 0,
+                    "durations": [
+                        3,
+                        12,
+                        14,
+                        9,
+                        3
+                    ]
+                },
+                {
+                    "scenario_id": 1,
+                    "durations": [
+                        15,
+                        4,
+                        13,
+                        7,
+                        13
+                    ]
+                },
+                {
+                    "scenario_id": 2,
+                    "durations": [
+                        4,
+                        10,
+                        9,
+                        13,
+                        10
+                    ]
+                }
+            ]
+        },
+        {
+            "job_id": 5,
+            "operations": [
+                3,
+                2,
+                1,
+                0,
+                4
+            ],
+            "scenarios": [
+                {
+                    "scenario_id": 0,
+                    "durations": [
+                        9,
+                        9,
+                        8,
+                        8,
+                        7
+                    ]
+                },
+                {
+                    "scenario_id": 1,
+                    "durations": [
+                        13,
+                        3,
+                        15,
+                        5,
+                        15
+                    ]
+                },
+                {
+                    "scenario_id": 2,
+                    "durations": [
+                        12,
+                        7,
+                        12,
+                        10,
+                        10
+                    ]
+                }
+            ]
+        }
+    ]
+}

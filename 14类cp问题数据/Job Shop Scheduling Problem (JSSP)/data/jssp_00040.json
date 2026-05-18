@@ -1,0 +1,156 @@
+{
+  "id": "jssp_00040",
+  "num_jobs": 7,
+  "num_machines": 4,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 36
+        },
+        {
+          "machine": 0,
+          "duration": 41
+        },
+        {
+          "machine": 2,
+          "duration": 31
+        },
+        {
+          "machine": 3,
+          "duration": 21
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 8
+        },
+        {
+          "machine": 3,
+          "duration": 72
+        },
+        {
+          "machine": 1,
+          "duration": 21
+        },
+        {
+          "machine": 2,
+          "duration": 12
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 11
+        },
+        {
+          "machine": 3,
+          "duration": 27
+        },
+        {
+          "machine": 2,
+          "duration": 45
+        },
+        {
+          "machine": 1,
+          "duration": 19
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 70
+        },
+        {
+          "machine": 0,
+          "duration": 71
+        },
+        {
+          "machine": 1,
+          "duration": 17
+        },
+        {
+          "machine": 2,
+          "duration": 57
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 34
+        },
+        {
+          "machine": 2,
+          "duration": 24
+        },
+        {
+          "machine": 1,
+          "duration": 44
+        },
+        {
+          "machine": 0,
+          "duration": 25
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 64
+        },
+        {
+          "machine": 1,
+          "duration": 25
+        },
+        {
+          "machine": 3,
+          "duration": 80
+        },
+        {
+          "machine": 2,
+          "duration": 31
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 26
+        },
+        {
+          "machine": 0,
+          "duration": 79
+        },
+        {
+          "machine": 1,
+          "duration": 31
+        },
+        {
+          "machine": 3,
+          "duration": 79
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      5,
+      80
+    ],
+    "generated_at": "2026-03-16T17:30:53.598529",
+    "difficulty": "medium"
+  }
+}
