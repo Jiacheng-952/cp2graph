@@ -59,6 +59,7 @@ class CPModelIR:
     constraints: List[Constraint] = field(default_factory=list)
     objective: Optional[Objective] = None
     constants: Dict[str, Any] = field(default_factory=dict)
+    shared_subexpressions: Dict[str, Any] = field(default_factory=dict)
 
     def copy(self) -> "CPModelIR":
         return CPModelIR(
@@ -66,4 +67,5 @@ class CPModelIR:
             constraints=list(self.constraints),
             objective=self.objective,
             constants=dict(self.constants),
+            shared_subexpressions=dict(self.shared_subexpressions),
         )
