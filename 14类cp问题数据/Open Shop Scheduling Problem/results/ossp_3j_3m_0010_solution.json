@@ -1,0 +1,79 @@
+{
+  "status": "OPTIMAL",
+  "solve_time": 0.022,
+  "makespan": 32,
+  "schedule": [
+    {
+      "job": 0,
+      "task": 0,
+      "machine": 0,
+      "start": 26,
+      "duration": 5,
+      "end": 31
+    },
+    {
+      "job": 0,
+      "task": 1,
+      "machine": 1,
+      "start": 15,
+      "duration": 11,
+      "end": 26
+    },
+    {
+      "job": 0,
+      "task": 2,
+      "machine": 2,
+      "start": 0,
+      "duration": 13,
+      "end": 13
+    },
+    {
+      "job": 1,
+      "task": 0,
+      "machine": 0,
+      "start": 0,
+      "duration": 10,
+      "end": 10
+    },
+    {
+      "job": 1,
+      "task": 1,
+      "machine": 1,
+      "start": 26,
+      "duration": 3,
+      "end": 29
+    },
+    {
+      "job": 1,
+      "task": 2,
+      "machine": 2,
+      "start": 13,
+      "duration": 9,
+      "end": 22
+    },
+    {
+      "job": 2,
+      "task": 0,
+      "machine": 0,
+      "start": 15,
+      "duration": 10,
+      "end": 25
+    },
+    {
+      "job": 2,
+      "task": 1,
+      "machine": 1,
+      "start": 0,
+      "duration": 15,
+      "end": 15
+    },
+    {
+      "job": 2,
+      "task": 2,
+      "machine": 2,
+      "start": 25,
+      "duration": 7,
+      "end": 32
+    }
+  ]
+}

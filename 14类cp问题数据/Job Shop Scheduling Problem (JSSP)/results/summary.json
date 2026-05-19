@@ -1,0 +1,602 @@
+[
+  {
+    "instance": "jssp_00001",
+    "status": "OPTIMAL",
+    "makespan": 639,
+    "time": 0.0197
+  },
+  {
+    "instance": "jssp_00002",
+    "status": "OPTIMAL",
+    "makespan": 1289,
+    "time": 0.6929
+  },
+  {
+    "instance": "jssp_00003",
+    "status": "OPTIMAL",
+    "makespan": 523,
+    "time": 0.017
+  },
+  {
+    "instance": "jssp_00004",
+    "status": "OPTIMAL",
+    "makespan": 386,
+    "time": 0.0119
+  },
+  {
+    "instance": "jssp_00005",
+    "status": "OPTIMAL",
+    "makespan": 1915,
+    "time": 2.3448
+  },
+  {
+    "instance": "jssp_00006",
+    "status": "OPTIMAL",
+    "makespan": 1920,
+    "time": 3.5134
+  },
+  {
+    "instance": "jssp_00007",
+    "status": "OPTIMAL",
+    "makespan": 485,
+    "time": 0.015
+  },
+  {
+    "instance": "jssp_00008",
+    "status": "OPTIMAL",
+    "makespan": 100,
+    "time": 0.0192
+  },
+  {
+    "instance": "jssp_00009",
+    "status": "OPTIMAL",
+    "makespan": 563,
+    "time": 0.0585
+  },
+  {
+    "instance": "jssp_00010",
+    "status": "OPTIMAL",
+    "makespan": 2882,
+    "time": 14.242
+  },
+  {
+    "instance": "jssp_00011",
+    "status": "OPTIMAL",
+    "makespan": 523,
+    "time": 0.0259
+  },
+  {
+    "instance": "jssp_00012",
+    "status": "OPTIMAL",
+    "makespan": 495,
+    "time": 0.0199
+  },
+  {
+    "instance": "jssp_00013",
+    "status": "OPTIMAL",
+    "makespan": 911,
+    "time": 0.064
+  },
+  {
+    "instance": "jssp_00014",
+    "status": "OPTIMAL",
+    "makespan": 1116,
+    "time": 0.5759
+  },
+  {
+    "instance": "jssp_00015",
+    "status": "OPTIMAL",
+    "makespan": 615,
+    "time": 0.1163
+  },
+  {
+    "instance": "jssp_00016",
+    "status": "OPTIMAL",
+    "makespan": 507,
+    "time": 0.02
+  },
+  {
+    "instance": "jssp_00017",
+    "status": "OPTIMAL",
+    "makespan": 506,
+    "time": 0.0275
+  },
+  {
+    "instance": "jssp_00018",
+    "status": "OPTIMAL",
+    "makespan": 2592,
+    "time": 0.4448
+  },
+  {
+    "instance": "jssp_00019",
+    "status": "FEASIBLE",
+    "makespan": 1977,
+    "time": 60.1005
+  },
+  {
+    "instance": "jssp_00020",
+    "status": "OPTIMAL",
+    "makespan": 879,
+    "time": 0.2692
+  },
+  {
+    "instance": "jssp_00021",
+    "status": "OPTIMAL",
+    "makespan": 538,
+    "time": 0.0259
+  },
+  {
+    "instance": "jssp_00022",
+    "status": "OPTIMAL",
+    "makespan": 55,
+    "time": 0.0106
+  },
+  {
+    "instance": "jssp_00023",
+    "status": "OPTIMAL",
+    "makespan": 713,
+    "time": 0.1208
+  },
+  {
+    "instance": "jssp_00024",
+    "status": "FEASIBLE",
+    "makespan": 1247,
+    "time": 60.1121
+  },
+  {
+    "instance": "jssp_00025",
+    "status": "OPTIMAL",
+    "makespan": 98,
+    "time": 0.0123
+  },
+  {
+    "instance": "jssp_00026",
+    "status": "FEASIBLE",
+    "makespan": 1253,
+    "time": 60.1133
+  },
+  {
+    "instance": "jssp_00027",
+    "status": "OPTIMAL",
+    "makespan": 570,
+    "time": 0.0572
+  },
+  {
+    "instance": "jssp_00028",
+    "status": "OPTIMAL",
+    "makespan": 485,
+    "time": 0.0175
+  },
+  {
+    "instance": "jssp_00029",
+    "status": "FEASIBLE",
+    "makespan": 1944,
+    "time": 60.0966
+  },
+  {
+    "instance": "jssp_00030",
+    "status": "OPTIMAL",
+    "makespan": 636,
+    "time": 0.029
+  },
+  {
+    "instance": "jssp_00031",
+    "status": "OPTIMAL",
+    "makespan": 1128,
+    "time": 7.8373
+  },
+  {
+    "instance": "jssp_00032",
+    "status": "OPTIMAL",
+    "makespan": 409,
+    "time": 0.0192
+  },
+  {
+    "instance": "jssp_00033",
+    "status": "OPTIMAL",
+    "makespan": 542,
+    "time": 0.0386
+  },
+  {
+    "instance": "jssp_00034",
+    "status": "OPTIMAL",
+    "makespan": 2856,
+    "time": 3.6494
+  },
+  {
+    "instance": "jssp_00035",
+    "status": "OPTIMAL",
+    "makespan": 651,
+    "time": 0.0157
+  },
+  {
+    "instance": "jssp_00036",
+    "status": "OPTIMAL",
+    "makespan": 521,
+    "time": 0.0676
+  },
+  {
+    "instance": "jssp_00037",
+    "status": "OPTIMAL",
+    "makespan": 488,
+    "time": 0.0179
+  },
+  {
+    "instance": "jssp_00038",
+    "status": "OPTIMAL",
+    "makespan": 559,
+    "time": 0.0499
+  },
+  {
+    "instance": "jssp_00039",
+    "status": "OPTIMAL",
+    "makespan": 1005,
+    "time": 0.0835
+  },
+  {
+    "instance": "jssp_00040",
+    "status": "OPTIMAL",
+    "makespan": 383,
+    "time": 0.009
+  },
+  {
+    "instance": "jssp_00041",
+    "status": "OPTIMAL",
+    "makespan": 128,
+    "time": 0.0128
+  },
+  {
+    "instance": "jssp_00042",
+    "status": "OPTIMAL",
+    "makespan": 657,
+    "time": 0.0501
+  },
+  {
+    "instance": "jssp_00043",
+    "status": "OPTIMAL",
+    "makespan": 578,
+    "time": 0.0093
+  },
+  {
+    "instance": "jssp_00044",
+    "status": "OPTIMAL",
+    "makespan": 35,
+    "time": 0.0134
+  },
+  {
+    "instance": "jssp_00045",
+    "status": "OPTIMAL",
+    "makespan": 427,
+    "time": 0.0141
+  },
+  {
+    "instance": "jssp_00046",
+    "status": "FEASIBLE",
+    "makespan": 1210,
+    "time": 60.1184
+  },
+  {
+    "instance": "jssp_00047",
+    "status": "OPTIMAL",
+    "makespan": 560,
+    "time": 0.0303
+  },
+  {
+    "instance": "jssp_00048",
+    "status": "OPTIMAL",
+    "makespan": 574,
+    "time": 0.1077
+  },
+  {
+    "instance": "jssp_00049",
+    "status": "OPTIMAL",
+    "makespan": 75,
+    "time": 0.0062
+  },
+  {
+    "instance": "jssp_00050",
+    "status": "OPTIMAL",
+    "makespan": 121,
+    "time": 0.0109
+  },
+  {
+    "instance": "jssp_00051",
+    "status": "OPTIMAL",
+    "makespan": 1299,
+    "time": 0.0401
+  },
+  {
+    "instance": "jssp_00052",
+    "status": "OPTIMAL",
+    "makespan": 2882,
+    "time": 0.8398
+  },
+  {
+    "instance": "jssp_00053",
+    "status": "OPTIMAL",
+    "makespan": 2757,
+    "time": 0.3394
+  },
+  {
+    "instance": "jssp_00054",
+    "status": "OPTIMAL",
+    "makespan": 1234,
+    "time": 0.0776
+  },
+  {
+    "instance": "jssp_00055",
+    "status": "OPTIMAL",
+    "makespan": 2197,
+    "time": 0.4923
+  },
+  {
+    "instance": "jssp_00056",
+    "status": "OPTIMAL",
+    "makespan": 1223,
+    "time": 0.0788
+  },
+  {
+    "instance": "jssp_00057",
+    "status": "FEASIBLE",
+    "makespan": 1387,
+    "time": 60.1222
+  },
+  {
+    "instance": "jssp_00058",
+    "status": "OPTIMAL",
+    "makespan": 1246,
+    "time": 0.1491
+  },
+  {
+    "instance": "jssp_00059",
+    "status": "OPTIMAL",
+    "makespan": 81,
+    "time": 0.0106
+  },
+  {
+    "instance": "jssp_00060",
+    "status": "OPTIMAL",
+    "makespan": 559,
+    "time": 0.054
+  },
+  {
+    "instance": "jssp_00061",
+    "status": "OPTIMAL",
+    "makespan": 470,
+    "time": 0.0248
+  },
+  {
+    "instance": "jssp_00062",
+    "status": "OPTIMAL",
+    "makespan": 1198,
+    "time": 42.9994
+  },
+  {
+    "instance": "jssp_00063",
+    "status": "OPTIMAL",
+    "makespan": 572,
+    "time": 0.0464
+  },
+  {
+    "instance": "jssp_00064",
+    "status": "FEASIBLE",
+    "makespan": 2938,
+    "time": 60.2354
+  },
+  {
+    "instance": "jssp_00065",
+    "status": "OPTIMAL",
+    "makespan": 507,
+    "time": 0.0469
+  },
+  {
+    "instance": "jssp_00066",
+    "status": "OPTIMAL",
+    "makespan": 2845,
+    "time": 0.3533
+  },
+  {
+    "instance": "jssp_00067",
+    "status": "OPTIMAL",
+    "makespan": 632,
+    "time": 0.1354
+  },
+  {
+    "instance": "jssp_00068",
+    "status": "OPTIMAL",
+    "makespan": 1178,
+    "time": 0.1847
+  },
+  {
+    "instance": "jssp_00069",
+    "status": "FEASIBLE",
+    "makespan": 1149,
+    "time": 60.208
+  },
+  {
+    "instance": "jssp_00070",
+    "status": "OPTIMAL",
+    "makespan": 429,
+    "time": 0.0322
+  },
+  {
+    "instance": "jssp_00071",
+    "status": "OPTIMAL",
+    "makespan": 678,
+    "time": 0.0435
+  },
+  {
+    "instance": "jssp_00072",
+    "status": "OPTIMAL",
+    "makespan": 452,
+    "time": 0.0193
+  },
+  {
+    "instance": "jssp_00073",
+    "status": "OPTIMAL",
+    "makespan": 1077,
+    "time": 0.8104
+  },
+  {
+    "instance": "jssp_00074",
+    "status": "OPTIMAL",
+    "makespan": 397,
+    "time": 0.0236
+  },
+  {
+    "instance": "jssp_00075",
+    "status": "OPTIMAL",
+    "makespan": 450,
+    "time": 0.0441
+  },
+  {
+    "instance": "jssp_00076",
+    "status": "OPTIMAL",
+    "makespan": 656,
+    "time": 0.0313
+  },
+  {
+    "instance": "jssp_00077",
+    "status": "OPTIMAL",
+    "makespan": 602,
+    "time": 0.0526
+  },
+  {
+    "instance": "jssp_00078",
+    "status": "OPTIMAL",
+    "makespan": 296,
+    "time": 0.022
+  },
+  {
+    "instance": "jssp_00079",
+    "status": "OPTIMAL",
+    "makespan": 429,
+    "time": 0.0233
+  },
+  {
+    "instance": "jssp_00080",
+    "status": "OPTIMAL",
+    "makespan": 522,
+    "time": 0.0195
+  },
+  {
+    "instance": "jssp_00081",
+    "status": "OPTIMAL",
+    "makespan": 469,
+    "time": 0.0213
+  },
+  {
+    "instance": "jssp_00082",
+    "status": "OPTIMAL",
+    "makespan": 987,
+    "time": 0.7151
+  },
+  {
+    "instance": "jssp_00083",
+    "status": "OPTIMAL",
+    "makespan": 429,
+    "time": 0.0159
+  },
+  {
+    "instance": "jssp_00084",
+    "status": "OPTIMAL",
+    "makespan": 586,
+    "time": 0.1675
+  },
+  {
+    "instance": "jssp_00085",
+    "status": "OPTIMAL",
+    "makespan": 868,
+    "time": 0.3026
+  },
+  {
+    "instance": "jssp_00086",
+    "status": "OPTIMAL",
+    "makespan": 536,
+    "time": 0.0384
+  },
+  {
+    "instance": "jssp_00087",
+    "status": "OPTIMAL",
+    "makespan": 563,
+    "time": 0.0247
+  },
+  {
+    "instance": "jssp_00088",
+    "status": "OPTIMAL",
+    "makespan": 576,
+    "time": 0.0417
+  },
+  {
+    "instance": "jssp_00089",
+    "status": "OPTIMAL",
+    "makespan": 556,
+    "time": 0.0206
+  },
+  {
+    "instance": "jssp_00090",
+    "status": "OPTIMAL",
+    "makespan": 949,
+    "time": 0.1287
+  },
+  {
+    "instance": "jssp_00091",
+    "status": "OPTIMAL",
+    "makespan": 765,
+    "time": 0.1923
+  },
+  {
+    "instance": "jssp_00092",
+    "status": "OPTIMAL",
+    "makespan": 1065,
+    "time": 7.1528
+  },
+  {
+    "instance": "jssp_00093",
+    "status": "OPTIMAL",
+    "makespan": 415,
+    "time": 0.0179
+  },
+  {
+    "instance": "jssp_00094",
+    "status": "OPTIMAL",
+    "makespan": 507,
+    "time": 0.0446
+  },
+  {
+    "instance": "jssp_00095",
+    "status": "OPTIMAL",
+    "makespan": 625,
+    "time": 0.0334
+  },
+  {
+    "instance": "jssp_00096",
+    "status": "OPTIMAL",
+    "makespan": 886,
+    "time": 0.0697
+  },
+  {
+    "instance": "jssp_00097",
+    "status": "OPTIMAL",
+    "makespan": 563,
+    "time": 0.0553
+  },
+  {
+    "instance": "jssp_00098",
+    "status": "OPTIMAL",
+    "makespan": 842,
+    "time": 0.0677
+  },
+  {
+    "instance": "jssp_00099",
+    "status": "OPTIMAL",
+    "makespan": 461,
+    "time": 0.0113
+  },
+  {
+    "instance": "jssp_00100",
+    "status": "OPTIMAL",
+    "makespan": 786,
+    "time": 0.1265
+  }
+]

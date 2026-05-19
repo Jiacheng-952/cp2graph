@@ -1,0 +1,213 @@
+import random
+import json
+import os
+import argparse
+from datetime import datetime
+
+DIFFICULTY_CONFIGS = {
+    "easy": {
+        "jobs_range": (3, 6),
+        "machines_range": (2, 4),
+        "duration_range": (1, 30),
+        "description": "小规模问题，短加工时间"
+    },
+    "medium": {
+        "jobs_range": (6, 12),
+        "machines_range": (4, 8),
+        "duration_range": (5, 80),
+        "description": "中等规模问题，中等加工时间"
+    },
+    "hard": {
+        "jobs_range": (10, 20),
+        "machines_range": (6, 12),
+        "duration_range": (10, 100),
+        "description": "大规模问题，长加工时间"
+    },
+    "very_hard": {
+        "jobs_range": (15, 30),
+        "machines_range": (8, 15),
+        "duration_range": (20, 150),
+        "description": "超大规模问题，加工时间变化大"
+    }
+}
+
+def generate_jssp_instance(instance_id, num_jobs, num_machines, min_duration, max_duration, 
+                           mode="random", seed=None):
+    if seed is not None:
+        random.seed(seed)
+    
+    jobs = []
+    for j in range(num_jobs):
+        machines = list(range(num_machines))
+        
+        if mode == "random":
+            random.shuffle(machines)
+        elif mode == "flowshop":
+            pass
+        elif mode == "reverse_flowshop":
+            machines.reverse()
+        
+        operations = []
+        for m in machines:
+            duration = random.randint(min_duration, max_duration)
+            operations.append({
+                "machine": m,
+                "duration": duration
+            })
+        
+        jobs.append({"operations": operations})
+    
+    instance = {
+        "id": instance_id,
+        "num_jobs": num_jobs,
+        "num_machines": num_machines,
+        "jobs": jobs,
+        "metadata": {
+            "mode": mode,
+            "duration_range": [min_duration, max_duration],
+            "generated_at": datetime.now().isoformat()
+        }
+    }
+    
+    return instance
+
+def generate_batch(num_instances=2000, difficulty_distribution=None, output_dir="data"):
+    os.makedirs(output_dir, exist_ok=True)
+    
+    if difficulty_distribution is None:
+        difficulty_distribution = {
+            "easy": 0.15,
+            "medium": 0.45,
+            "hard": 0.30,
+            "very_hard": 0.10
+        }
+    
+    difficulties = list(difficulty_distribution.keys())
+    weights = list(difficulty_distribution.values())
+    
+    print(f"开始生成 {num_instances} 个 JSSP 实例...")
+    print(f"难度分布: {difficulty_distribution}")
+    
+    generated_count = 0
+    instance_id = 1
+    
+    while generated_count < num_instances:
+        difficulty = random.choices(difficulties, weights=weights, k=1)[0]
+        config = DIFFICULTY_CONFIGS[difficulty]
+        
+        num_jobs = random.randint(*config["jobs_range"])
+        num_machines = random.randint(*config["machines_range"])
+        min_duration, max_duration = config["duration_range"]
+        
+        instance_id_str = f"jssp_{instance_id:05d}"
+        
+        instance = generate_jssp_instance(
+            instance_id=instance_id_str,
+            num_jobs=num_jobs,
+            num_machines=num_machines,
+            min_duration=min_duration,
+            max_duration=max_duration,
+            mode="random",
+            seed=instance_id
+        )
+        
+        instance["metadata"]["difficulty"] = difficulty
+        
+        filepath = os.path.join(output_dir, f"{instance_id_str}.json")
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(instance, f, indent=2, ensure_ascii=False)
+        
+        generated_count += 1
+        instance_id += 1
+        
+        if generated_count % 500 == 0:
+            print(f"已生成 {generated_count}/{num_instances} 个实例...")
+    
+    print(f"\n完成! 已将 {num_instances} 个实例保存到 {output_dir}/ 目录")
+    
+    stats_file = os.path.join(output_dir, "generation_stats.json")
+    stats = {
+        "total_instances": num_instances,
+        "difficulty_distribution": difficulty_distribution,
+        "difficulty_configs": DIFFICULTY_CONFIGS,
+        "generated_at": datetime.now().isoformat()
+    }
+    with open(stats_file, 'w', encoding='utf-8') as f:
+        json.dump(stats, f, indent=2, ensure_ascii=False)
+
+def validate_instance(instance):
+    num_jobs = instance["num_jobs"]
+    num_machines = instance["num_machines"]
+    jobs = instance["jobs"]
+    
+    if len(jobs) != num_jobs:
+        return False, f"作业数量不匹配: 声明 {num_jobs}, 实际 {len(jobs)}"
+    
+    for job_idx, job in enumerate(jobs):
+        operations = job["operations"]
+        if len(operations) != num_machines:
+            return False, f"作业 {job_idx} 的工序数量不等于机器数"
+        
+        machines_in_job = set()
+        for op in operations:
+            machine = op["machine"]
+            duration = op["duration"]
+            
+            if machine < 0 or machine >= num_machines:
+                return False, f"作业 {job_idx} 包含无效机器编号 {machine}"
+            
+            if machine in machines_in_job:
+                return False, f"作业 {job_idx} 中机器 {machine} 重复"
+            machines_in_job.add(machine)
+            
+            if duration <= 0:
+                return False, f"作业 {job_idx} 包含非正加工时间 {duration}"
+    
+    return True, "验证通过"
+
+def main():
+    parser = argparse.ArgumentParser(description="生成 JSSP (作业车间调度问题) JSON 格式数据")
+    
+    parser.add_argument("--batch", action="store_true", help="批量生成模式")
+    parser.add_argument("--num_instances", "-n", type=int, default=2000, help="生成的实例数量")
+    parser.add_argument("--output", "-o", type=str, default="data", help="输出目录")
+    
+    parser.add_argument("--jobs", "-j", type=int, default=10, help="作业数量 (单实例模式)")
+    parser.add_argument("--machines", "-m", type=int, default=5, help="机器数量 (单实例模式)")
+    parser.add_argument("--min_duration", type=int, default=1, help="最小工序时长")
+    parser.add_argument("--max_duration", type=int, default=100, help="最大工序时长")
+    parser.add_argument("--mode", type=str, default="random", 
+                        choices=["random", "flowshop", "reverse_flowshop"],
+                        help="机器顺序模式")
+    parser.add_argument("--seed", type=int, help="随机种子")
+    parser.add_argument("--validate", action="store_true", help="验证生成的数据")
+    
+    args = parser.parse_args()
+    
+    if args.batch:
+        generate_batch(num_instances=args.num_instances, output_dir=args.output)
+    else:
+        instance = generate_jssp_instance(
+            instance_id="jssp_single",
+            num_jobs=args.jobs,
+            num_machines=args.machines,
+            min_duration=args.min_duration,
+            max_duration=args.max_duration,
+            mode=args.mode,
+            seed=args.seed
+        )
+        
+        if args.validate:
+            valid, msg = validate_instance(instance)
+            print(f"验证结果: {msg}")
+        
+        if args.output:
+            os.makedirs(os.path.dirname(os.path.abspath(args.output)) or ".", exist_ok=True)
+            with open(args.output, 'w', encoding='utf-8') as f:
+                json.dump(instance, f, indent=2, ensure_ascii=False)
+            print(f"实例已保存至 {args.output}")
+        else:
+            print(json.dumps(instance, indent=2, ensure_ascii=False))
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,193 @@
+{
+    "num_tasks": 20,
+    "num_resources": 3,
+    "capacities": [
+        4,
+        4,
+        5
+    ],
+    "tasks": [
+        {
+            "id": 0,
+            "type": 0,
+            "resource": 1,
+            "duration": 16,
+            "successors": [
+                4,
+                13,
+                17
+            ]
+        },
+        {
+            "id": 1,
+            "type": 1,
+            "resource": 0,
+            "duration": 17,
+            "successors": [
+                12,
+                13
+            ]
+        },
+        {
+            "id": 2,
+            "type": 1,
+            "resource": 1,
+            "duration": 11,
+            "successors": [
+                4
+            ]
+        },
+        {
+            "id": 3,
+            "type": 0,
+            "resource": 2,
+            "duration": 18,
+            "successors": [
+                6
+            ]
+        },
+        {
+            "id": 4,
+            "type": 0,
+            "resource": 0,
+            "duration": 12,
+            "successors": [
+                18
+            ]
+        },
+        {
+            "id": 5,
+            "type": 0,
+            "resource": 0,
+            "duration": 27,
+            "successors": [
+                14
+            ]
+        },
+        {
+            "id": 6,
+            "type": 1,
+            "resource": 2,
+            "duration": 27,
+            "successors": [
+                15,
+                19
+            ]
+        },
+        {
+            "id": 7,
+            "type": 0,
+            "resource": 1,
+            "duration": 20,
+            "successors": [
+                10,
+                17
+            ]
+        },
+        {
+            "id": 8,
+            "type": 1,
+            "resource": 2,
+            "duration": 19,
+            "successors": [
+                10,
+                19
+            ]
+        },
+        {
+            "id": 9,
+            "type": 1,
+            "resource": 0,
+            "duration": 18,
+            "successors": [
+                10,
+                11,
+                16
+            ]
+        },
+        {
+            "id": 10,
+            "type": 0,
+            "resource": 1,
+            "duration": 20,
+            "successors": [
+                15
+            ]
+        },
+        {
+            "id": 11,
+            "type": 1,
+            "resource": 0,
+            "duration": 26,
+            "successors": [
+                14,
+                15,
+                17
+            ]
+        },
+        {
+            "id": 12,
+            "type": 0,
+            "resource": 1,
+            "duration": 24,
+            "successors": [
+                13,
+                16
+            ]
+        },
+        {
+            "id": 13,
+            "type": 0,
+            "resource": 1,
+            "duration": 12,
+            "successors": []
+        },
+        {
+            "id": 14,
+            "type": 0,
+            "resource": 1,
+            "duration": 12,
+            "successors": [
+                15,
+                17
+            ]
+        },
+        {
+            "id": 15,
+            "type": 1,
+            "resource": 0,
+            "duration": 24,
+            "successors": [
+                18
+            ]
+        },
+        {
+            "id": 16,
+            "type": 1,
+            "resource": 0,
+            "duration": 14,
+            "successors": []
+        },
+        {
+            "id": 17,
+            "type": 1,
+            "resource": 0,
+            "duration": 28,
+            "successors": []
+        },
+        {
+            "id": 18,
+            "type": 1,
+            "resource": 1,
+            "duration": 25,
+            "successors": []
+        },
+        {
+            "id": 19,
+            "type": 0,
+            "resource": 1,
+            "duration": 18,
+            "successors": []
+        }
+    ]
+}

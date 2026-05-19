@@ -1,0 +1,268 @@
+{
+  "id": "jssp_00033",
+  "num_jobs": 9,
+  "num_machines": 6,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 73
+        },
+        {
+          "machine": 2,
+          "duration": 72
+        },
+        {
+          "machine": 3,
+          "duration": 28
+        },
+        {
+          "machine": 5,
+          "duration": 69
+        },
+        {
+          "machine": 1,
+          "duration": 46
+        },
+        {
+          "machine": 4,
+          "duration": 72
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 43
+        },
+        {
+          "machine": 0,
+          "duration": 57
+        },
+        {
+          "machine": 4,
+          "duration": 44
+        },
+        {
+          "machine": 2,
+          "duration": 71
+        },
+        {
+          "machine": 5,
+          "duration": 68
+        },
+        {
+          "machine": 3,
+          "duration": 11
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 76
+        },
+        {
+          "machine": 2,
+          "duration": 36
+        },
+        {
+          "machine": 1,
+          "duration": 20
+        },
+        {
+          "machine": 3,
+          "duration": 12
+        },
+        {
+          "machine": 4,
+          "duration": 45
+        },
+        {
+          "machine": 5,
+          "duration": 41
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 36
+        },
+        {
+          "machine": 5,
+          "duration": 70
+        },
+        {
+          "machine": 4,
+          "duration": 39
+        },
+        {
+          "machine": 2,
+          "duration": 45
+        },
+        {
+          "machine": 0,
+          "duration": 5
+        },
+        {
+          "machine": 1,
+          "duration": 50
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 5,
+          "duration": 19
+        },
+        {
+          "machine": 0,
+          "duration": 9
+        },
+        {
+          "machine": 1,
+          "duration": 51
+        },
+        {
+          "machine": 3,
+          "duration": 76
+        },
+        {
+          "machine": 2,
+          "duration": 20
+        },
+        {
+          "machine": 4,
+          "duration": 13
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 12
+        },
+        {
+          "machine": 3,
+          "duration": 57
+        },
+        {
+          "machine": 5,
+          "duration": 40
+        },
+        {
+          "machine": 4,
+          "duration": 49
+        },
+        {
+          "machine": 0,
+          "duration": 30
+        },
+        {
+          "machine": 1,
+          "duration": 29
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 50
+        },
+        {
+          "machine": 1,
+          "duration": 80
+        },
+        {
+          "machine": 2,
+          "duration": 73
+        },
+        {
+          "machine": 4,
+          "duration": 63
+        },
+        {
+          "machine": 3,
+          "duration": 44
+        },
+        {
+          "machine": 5,
+          "duration": 67
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 4,
+          "duration": 51
+        },
+        {
+          "machine": 2,
+          "duration": 19
+        },
+        {
+          "machine": 1,
+          "duration": 36
+        },
+        {
+          "machine": 3,
+          "duration": 6
+        },
+        {
+          "machine": 5,
+          "duration": 74
+        },
+        {
+          "machine": 0,
+          "duration": 61
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 9
+        },
+        {
+          "machine": 4,
+          "duration": 16
+        },
+        {
+          "machine": 3,
+          "duration": 41
+        },
+        {
+          "machine": 1,
+          "duration": 64
+        },
+        {
+          "machine": 2,
+          "duration": 40
+        },
+        {
+          "machine": 5,
+          "duration": 59
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      5,
+      80
+    ],
+    "generated_at": "2026-03-16T17:30:53.580282",
+    "difficulty": "medium"
+  }
+}

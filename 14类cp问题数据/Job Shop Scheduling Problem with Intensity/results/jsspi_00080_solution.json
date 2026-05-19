@@ -1,0 +1,89 @@
+{
+  "instance_id": "jsspi_00080",
+  "status": "OPTIMAL",
+  "makespan": 96,
+  "time": 0.02428603172302246,
+  "results": [
+    {
+      "job": 0,
+      "task": 0,
+      "machine": 0,
+      "intensity": 4,
+      "start": 18,
+      "duration": 18,
+      "end": 36
+    },
+    {
+      "job": 0,
+      "task": 1,
+      "machine": 2,
+      "intensity": 3,
+      "start": 36,
+      "duration": 12,
+      "end": 48
+    },
+    {
+      "job": 0,
+      "task": 2,
+      "machine": 1,
+      "intensity": 4,
+      "start": 48,
+      "duration": 18,
+      "end": 66
+    },
+    {
+      "job": 1,
+      "task": 0,
+      "machine": 2,
+      "intensity": 4,
+      "start": 0,
+      "duration": 18,
+      "end": 18
+    },
+    {
+      "job": 1,
+      "task": 1,
+      "machine": 0,
+      "intensity": 2,
+      "start": 36,
+      "duration": 30,
+      "end": 66
+    },
+    {
+      "job": 1,
+      "task": 2,
+      "machine": 1,
+      "intensity": 1,
+      "start": 66,
+      "duration": 20,
+      "end": 86
+    },
+    {
+      "job": 2,
+      "task": 0,
+      "machine": 2,
+      "intensity": 5,
+      "start": 66,
+      "duration": 6,
+      "end": 72
+    },
+    {
+      "job": 2,
+      "task": 1,
+      "machine": 0,
+      "intensity": 1,
+      "start": 72,
+      "duration": 19,
+      "end": 91
+    },
+    {
+      "job": 2,
+      "task": 2,
+      "machine": 1,
+      "intensity": 4,
+      "start": 91,
+      "duration": 5,
+      "end": 96
+    }
+  ]
+}

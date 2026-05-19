@@ -1,0 +1,52 @@
+{
+  "id": "jssp_00022",
+  "num_jobs": 3,
+  "num_machines": 2,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 8
+        },
+        {
+          "machine": 0,
+          "duration": 1
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 6
+        },
+        {
+          "machine": 1,
+          "duration": 23
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 24
+        },
+        {
+          "machine": 0,
+          "duration": 21
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      1,
+      30
+    ],
+    "generated_at": "2026-03-16T17:30:53.549095",
+    "difficulty": "easy"
+  }
+}

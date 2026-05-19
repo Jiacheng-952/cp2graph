@@ -1,0 +1,178 @@
+{
+    "num_tasks": 20,
+    "num_resources": 3,
+    "capacities": [
+        5,
+        4,
+        2
+    ],
+    "tasks": [
+        {
+            "id": 0,
+            "type": 1,
+            "resource": 2,
+            "duration": 28,
+            "successors": [
+                7,
+                11
+            ]
+        },
+        {
+            "id": 1,
+            "type": 1,
+            "resource": 0,
+            "duration": 23,
+            "successors": [
+                16
+            ]
+        },
+        {
+            "id": 2,
+            "type": 1,
+            "resource": 2,
+            "duration": 17,
+            "successors": [
+                3
+            ]
+        },
+        {
+            "id": 3,
+            "type": 0,
+            "resource": 1,
+            "duration": 10,
+            "successors": [
+                4,
+                7,
+                16
+            ]
+        },
+        {
+            "id": 4,
+            "type": 1,
+            "resource": 0,
+            "duration": 18,
+            "successors": [
+                13,
+                15,
+                18
+            ]
+        },
+        {
+            "id": 5,
+            "type": 0,
+            "resource": 0,
+            "duration": 10,
+            "successors": []
+        },
+        {
+            "id": 6,
+            "type": 1,
+            "resource": 1,
+            "duration": 24,
+            "successors": []
+        },
+        {
+            "id": 7,
+            "type": 1,
+            "resource": 0,
+            "duration": 15,
+            "successors": []
+        },
+        {
+            "id": 8,
+            "type": 1,
+            "resource": 0,
+            "duration": 12,
+            "successors": [
+                16
+            ]
+        },
+        {
+            "id": 9,
+            "type": 1,
+            "resource": 2,
+            "duration": 25,
+            "successors": [
+                10,
+                13
+            ]
+        },
+        {
+            "id": 10,
+            "type": 0,
+            "resource": 1,
+            "duration": 29,
+            "successors": []
+        },
+        {
+            "id": 11,
+            "type": 1,
+            "resource": 2,
+            "duration": 23,
+            "successors": [
+                12,
+                15
+            ]
+        },
+        {
+            "id": 12,
+            "type": 1,
+            "resource": 1,
+            "duration": 15,
+            "successors": [
+                19
+            ]
+        },
+        {
+            "id": 13,
+            "type": 1,
+            "resource": 2,
+            "duration": 30,
+            "successors": []
+        },
+        {
+            "id": 14,
+            "type": 1,
+            "resource": 0,
+            "duration": 26,
+            "successors": [
+                19
+            ]
+        },
+        {
+            "id": 15,
+            "type": 0,
+            "resource": 1,
+            "duration": 29,
+            "successors": []
+        },
+        {
+            "id": 16,
+            "type": 1,
+            "resource": 2,
+            "duration": 29,
+            "successors": []
+        },
+        {
+            "id": 17,
+            "type": 0,
+            "resource": 2,
+            "duration": 15,
+            "successors": []
+        },
+        {
+            "id": 18,
+            "type": 1,
+            "resource": 0,
+            "duration": 19,
+            "successors": []
+        },
+        {
+            "id": 19,
+            "type": 0,
+            "resource": 2,
+            "duration": 25,
+            "successors": []
+        }
+    ]
+}

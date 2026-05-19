@@ -1,0 +1,106 @@
+{
+  "id": "jsspi_00067",
+  "num_jobs": 6,
+  "num_machines": 2,
+  "max_intensity": 6,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 4,
+          "intensity": 4
+        },
+        {
+          "machine": 0,
+          "duration": 15,
+          "intensity": 4
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 20,
+          "intensity": 4
+        },
+        {
+          "machine": 1,
+          "duration": 16,
+          "intensity": 5
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 30,
+          "intensity": 2
+        },
+        {
+          "machine": 1,
+          "duration": 21,
+          "intensity": 1
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 10,
+          "intensity": 1
+        },
+        {
+          "machine": 0,
+          "duration": 6,
+          "intensity": 4
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 4,
+          "intensity": 1
+        },
+        {
+          "machine": 0,
+          "duration": 16,
+          "intensity": 3
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 13,
+          "intensity": 5
+        },
+        {
+          "machine": 0,
+          "duration": 1,
+          "intensity": 4
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      1,
+      30
+    ],
+    "intensity_range": [
+      1,
+      5
+    ],
+    "generated_at": "2026-03-16T17:31:07.394348",
+    "difficulty": "easy",
+    "capacity_factor": 2.9
+  }
+}

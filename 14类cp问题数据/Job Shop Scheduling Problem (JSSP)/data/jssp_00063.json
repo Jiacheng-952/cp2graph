@@ -1,0 +1,352 @@
+{
+  "id": "jssp_00063",
+  "num_jobs": 12,
+  "num_machines": 6,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 16
+        },
+        {
+          "machine": 4,
+          "duration": 54
+        },
+        {
+          "machine": 1,
+          "duration": 15
+        },
+        {
+          "machine": 2,
+          "duration": 14
+        },
+        {
+          "machine": 5,
+          "duration": 30
+        },
+        {
+          "machine": 3,
+          "duration": 42
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 47
+        },
+        {
+          "machine": 4,
+          "duration": 35
+        },
+        {
+          "machine": 3,
+          "duration": 40
+        },
+        {
+          "machine": 5,
+          "duration": 8
+        },
+        {
+          "machine": 2,
+          "duration": 9
+        },
+        {
+          "machine": 0,
+          "duration": 25
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 67
+        },
+        {
+          "machine": 2,
+          "duration": 31
+        },
+        {
+          "machine": 5,
+          "duration": 18
+        },
+        {
+          "machine": 3,
+          "duration": 9
+        },
+        {
+          "machine": 4,
+          "duration": 9
+        },
+        {
+          "machine": 1,
+          "duration": 48
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 6
+        },
+        {
+          "machine": 5,
+          "duration": 55
+        },
+        {
+          "machine": 3,
+          "duration": 61
+        },
+        {
+          "machine": 0,
+          "duration": 11
+        },
+        {
+          "machine": 2,
+          "duration": 52
+        },
+        {
+          "machine": 4,
+          "duration": 12
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 37
+        },
+        {
+          "machine": 4,
+          "duration": 74
+        },
+        {
+          "machine": 1,
+          "duration": 73
+        },
+        {
+          "machine": 5,
+          "duration": 13
+        },
+        {
+          "machine": 0,
+          "duration": 30
+        },
+        {
+          "machine": 2,
+          "duration": 69
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 25
+        },
+        {
+          "machine": 5,
+          "duration": 10
+        },
+        {
+          "machine": 2,
+          "duration": 51
+        },
+        {
+          "machine": 3,
+          "duration": 32
+        },
+        {
+          "machine": 4,
+          "duration": 56
+        },
+        {
+          "machine": 1,
+          "duration": 48
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 20
+        },
+        {
+          "machine": 2,
+          "duration": 59
+        },
+        {
+          "machine": 3,
+          "duration": 22
+        },
+        {
+          "machine": 1,
+          "duration": 51
+        },
+        {
+          "machine": 4,
+          "duration": 21
+        },
+        {
+          "machine": 5,
+          "duration": 21
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 18
+        },
+        {
+          "machine": 5,
+          "duration": 58
+        },
+        {
+          "machine": 4,
+          "duration": 27
+        },
+        {
+          "machine": 3,
+          "duration": 55
+        },
+        {
+          "machine": 0,
+          "duration": 42
+        },
+        {
+          "machine": 2,
+          "duration": 69
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 9
+        },
+        {
+          "machine": 1,
+          "duration": 33
+        },
+        {
+          "machine": 0,
+          "duration": 49
+        },
+        {
+          "machine": 2,
+          "duration": 79
+        },
+        {
+          "machine": 5,
+          "duration": 6
+        },
+        {
+          "machine": 4,
+          "duration": 74
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 65
+        },
+        {
+          "machine": 2,
+          "duration": 51
+        },
+        {
+          "machine": 0,
+          "duration": 60
+        },
+        {
+          "machine": 4,
+          "duration": 25
+        },
+        {
+          "machine": 3,
+          "duration": 34
+        },
+        {
+          "machine": 5,
+          "duration": 66
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 58
+        },
+        {
+          "machine": 0,
+          "duration": 43
+        },
+        {
+          "machine": 4,
+          "duration": 27
+        },
+        {
+          "machine": 5,
+          "duration": 57
+        },
+        {
+          "machine": 1,
+          "duration": 63
+        },
+        {
+          "machine": 2,
+          "duration": 11
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 68
+        },
+        {
+          "machine": 0,
+          "duration": 52
+        },
+        {
+          "machine": 1,
+          "duration": 52
+        },
+        {
+          "machine": 2,
+          "duration": 57
+        },
+        {
+          "machine": 5,
+          "duration": 51
+        },
+        {
+          "machine": 4,
+          "duration": 66
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      5,
+      80
+    ],
+    "generated_at": "2026-03-16T17:30:53.658793",
+    "difficulty": "medium"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "jsspi_00064",
+  "num_jobs": 4,
+  "num_machines": 2,
+  "max_intensity": 6,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 4,
+          "intensity": 5
+        },
+        {
+          "machine": 1,
+          "duration": 13,
+          "intensity": 5
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 7,
+          "intensity": 3
+        },
+        {
+          "machine": 0,
+          "duration": 23,
+          "intensity": 2
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 3,
+          "intensity": 4
+        },
+        {
+          "machine": 0,
+          "duration": 15,
+          "intensity": 2
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 1,
+          "duration": 3,
+          "intensity": 4
+        },
+        {
+          "machine": 0,
+          "duration": 22,
+          "intensity": 1
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      1,
+      30
+    ],
+    "intensity_range": [
+      1,
+      5
+    ],
+    "generated_at": "2026-03-16T17:31:07.384372",
+    "difficulty": "easy",
+    "capacity_factor": 2.43
+  }
+}

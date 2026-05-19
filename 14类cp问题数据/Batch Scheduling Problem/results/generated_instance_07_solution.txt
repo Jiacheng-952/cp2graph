@@ -1,0 +1,23 @@
+139
+Resource 0:
+  Batch 0: [0, 18], Tasks: [3]
+  Batch 1: [18, 44], Tasks: [10]
+  Batch 2: [44, 57], Tasks: [4]
+  Batch 3: [57, 74], Tasks: [8]
+  Batch 4: [74, 97], Tasks: [19]
+Resource 1:
+  Batch 0: [0, 27], Tasks: [1]
+  Batch 1: [27, 44], Tasks: [5]
+  Batch 2: [44, 65], Tasks: [12]
+  Batch 3: [65, 76], Tasks: [15]
+  Batch 4: [76, 90], Tasks: [9]
+  Batch 5: [91, 110], Tasks: [17]
+  Batch 6: [110, 139], Tasks: [16]
+Resource 2:
+  Batch 0: [0, 13], Tasks: [0]
+  Batch 1: [18, 35], Tasks: [6]
+  Batch 2: [35, 58], Tasks: [14]
+  Batch 3: [58, 73], Tasks: [7, 11]
+  Batch 4: [73, 91], Tasks: [2]
+  Batch 5: [91, 103], Tasks: [13]
+  Batch 6: [110, 138], Tasks: [18]

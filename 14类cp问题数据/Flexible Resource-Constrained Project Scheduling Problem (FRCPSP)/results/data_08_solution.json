@@ -1,0 +1,165 @@
+{
+    "makespan": 52,
+    "schedule": [
+        {
+            "task": 1,
+            "mode": 1,
+            "resource": 1,
+            "start": 0,
+            "end": 7,
+            "duration": 7
+        },
+        {
+            "task": 2,
+            "mode": 0,
+            "resource": 2,
+            "start": 0,
+            "end": 6,
+            "duration": 6
+        },
+        {
+            "task": 3,
+            "mode": 0,
+            "resource": 2,
+            "start": 30,
+            "end": 32,
+            "duration": 2
+        },
+        {
+            "task": 4,
+            "mode": 1,
+            "resource": 2,
+            "start": 6,
+            "end": 15,
+            "duration": 9
+        },
+        {
+            "task": 5,
+            "mode": 0,
+            "resource": 0,
+            "start": 7,
+            "end": 24,
+            "duration": 17
+        },
+        {
+            "task": 6,
+            "mode": 0,
+            "resource": 0,
+            "start": 0,
+            "end": 9,
+            "duration": 9
+        },
+        {
+            "task": 7,
+            "mode": 2,
+            "resource": 2,
+            "start": 15,
+            "end": 16,
+            "duration": 1
+        },
+        {
+            "task": 8,
+            "mode": 0,
+            "resource": 1,
+            "start": 9,
+            "end": 23,
+            "duration": 14
+        },
+        {
+            "task": 9,
+            "mode": 0,
+            "resource": 1,
+            "start": 9,
+            "end": 17,
+            "duration": 8
+        },
+        {
+            "task": 10,
+            "mode": 0,
+            "resource": 2,
+            "start": 17,
+            "end": 23,
+            "duration": 6
+        },
+        {
+            "task": 11,
+            "mode": 0,
+            "resource": 2,
+            "start": 16,
+            "end": 30,
+            "duration": 14
+        },
+        {
+            "task": 12,
+            "mode": 1,
+            "resource": 2,
+            "start": 0,
+            "end": 6,
+            "duration": 6
+        },
+        {
+            "task": 13,
+            "mode": 0,
+            "resource": 0,
+            "start": 30,
+            "end": 42,
+            "duration": 12
+        },
+        {
+            "task": 14,
+            "mode": 1,
+            "resource": 1,
+            "start": 17,
+            "end": 31,
+            "duration": 14
+        },
+        {
+            "task": 15,
+            "mode": 1,
+            "resource": 1,
+            "start": 31,
+            "end": 33,
+            "duration": 2
+        },
+        {
+            "task": 16,
+            "mode": 0,
+            "resource": 0,
+            "start": 31,
+            "end": 37,
+            "duration": 6
+        },
+        {
+            "task": 17,
+            "mode": 0,
+            "resource": 0,
+            "start": 31,
+            "end": 39,
+            "duration": 8
+        },
+        {
+            "task": 18,
+            "mode": 0,
+            "resource": 0,
+            "start": 42,
+            "end": 52,
+            "duration": 10
+        },
+        {
+            "task": 19,
+            "mode": 1,
+            "resource": 1,
+            "start": 33,
+            "end": 36,
+            "duration": 3
+        },
+        {
+            "task": 20,
+            "mode": 2,
+            "resource": 2,
+            "start": 42,
+            "end": 51,
+            "duration": 9
+        }
+    ]
+}

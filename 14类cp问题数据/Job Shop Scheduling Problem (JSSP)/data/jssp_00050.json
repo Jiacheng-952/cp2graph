@@ -1,0 +1,96 @@
+{
+  "id": "jssp_00050",
+  "num_jobs": 4,
+  "num_machines": 4,
+  "jobs": [
+    {
+      "operations": [
+        {
+          "machine": 0,
+          "duration": 21
+        },
+        {
+          "machine": 2,
+          "duration": 29
+        },
+        {
+          "machine": 1,
+          "duration": 8
+        },
+        {
+          "machine": 3,
+          "duration": 23
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 18
+        },
+        {
+          "machine": 0,
+          "duration": 11
+        },
+        {
+          "machine": 1,
+          "duration": 8
+        },
+        {
+          "machine": 3,
+          "duration": 22
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 2,
+          "duration": 27
+        },
+        {
+          "machine": 1,
+          "duration": 4
+        },
+        {
+          "machine": 3,
+          "duration": 12
+        },
+        {
+          "machine": 0,
+          "duration": 11
+        }
+      ]
+    },
+    {
+      "operations": [
+        {
+          "machine": 3,
+          "duration": 28
+        },
+        {
+          "machine": 2,
+          "duration": 11
+        },
+        {
+          "machine": 0,
+          "duration": 20
+        },
+        {
+          "machine": 1,
+          "duration": 29
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mode": "random",
+    "duration_range": [
+      1,
+      30
+    ],
+    "generated_at": "2026-03-16T17:30:53.619185",
+    "difficulty": "easy"
+  }
+}
