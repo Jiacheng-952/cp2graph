@@ -450,6 +450,12 @@ def graph_ted_similarity(
     right_shared = right.graph.get("shared_subexpressions", {})
     left_tokens = _canonical_node_sequence(left, left_shared)
     right_tokens = _canonical_node_sequence(right, right_shared)
+    if len(left_tokens) * len(right_tokens) > 200_000:
+        left_counts = Counter(left_tokens)
+        right_counts = Counter(right_tokens)
+        common = sum(min(left_counts[token], right_counts[token]) for token in left_counts.keys() & right_counts.keys())
+        scale = max(len(left_tokens), len(right_tokens), 1)
+        return common / scale
     distance = _levenshtein_distance(left_tokens, right_tokens)
     scale = max(len(left_tokens), len(right_tokens), 1)
     return max(0.0, 1.0 - (distance / scale))
@@ -461,22 +467,10 @@ def graph_collapse_match_similarity(
 ) -> float:
     left_shared = left.graph.get("shared_subexpressions", {})
     right_shared = right.graph.get("shared_subexpressions", {})
-    left_node_payloads: List[Mapping[str, Any]] = []
-    for node_id, data in left.nodes(data=True):
-        payload = dict(data)
-        payload["_degree"] = left.degree(node_id)
-        left_node_payloads.append(payload)
-
-    right_node_payloads: List[Mapping[str, Any]] = []
-    for node_id, data in right.nodes(data=True):
-        payload = dict(data)
-        payload["_degree"] = right.degree(node_id)
-        right_node_payloads.append(payload)
-
-    directed_lr = _best_match_average(left_node_payloads, right_node_payloads, left_shared, right_shared)
-    directed_rl = _best_match_average(right_node_payloads, left_node_payloads, right_shared, left_shared)
-
-    node_score = (directed_lr + directed_rl) / 2.0
+    left_tokens = Counter(_canonical_node_sequence(left, left_shared))
+    right_tokens = Counter(_canonical_node_sequence(right, right_shared))
+    common = sum(min(left_tokens[token], right_tokens[token]) for token in left_tokens.keys() & right_tokens.keys())
+    node_score = common / max(sum(left_tokens.values()), sum(right_tokens.values()), 1)
     if left_shared or right_shared:
         shared_overlap = _jaccard_set(left_shared.keys(), right_shared.keys())
         node_score = 0.8 * node_score + 0.2 * shared_overlap
@@ -625,11 +619,32 @@ class GraphSimilarityIndex:
             candidate_keys = list(self._summaries.keys())
 
         coarse_limit = self.config.coarse_top_k if coarse_top_k is None else coarse_top_k
-        scored: List[GraphSimilarityResult] = []
+        coarse_scored: List[Tuple[str, float]] = []
         for key in candidate_keys:
             summary = self._summaries[key]
             if not passes_structural_filter(query_summary, summary, self.config):
                 continue
+            wl_score = wl_kernel_similarity(query_summary.wl_features, summary.wl_features)
+            jaccard_score = label_jaccard_similarity(query_summary, summary)
+            coarse_score = 0.75 * wl_score + 0.25 * jaccard_score
+            coarse_scored.append((key, coarse_score))
+
+        if not coarse_scored:
+            for key in candidate_keys:
+                summary = self._summaries[key]
+                wl_score = wl_kernel_similarity(query_summary.wl_features, summary.wl_features)
+                jaccard_score = label_jaccard_similarity(query_summary, summary)
+                coarse_score = 0.75 * wl_score + 0.25 * jaccard_score
+                coarse_scored.append((key, coarse_score))
+
+        coarse_scored.sort(key=lambda item: item[1], reverse=True)
+        shortlist_keys = [key for key, _score in coarse_scored[:coarse_limit]] if coarse_limit is not None else [
+            key for key, _score in coarse_scored
+        ]
+
+        scored: List[GraphSimilarityResult] = []
+        for key in shortlist_keys:
+            summary = self._summaries[key]
             candidate_graph = self._graphs[key]
             ted_score = graph_ted_similarity(query, candidate_graph)
             collapse_score = graph_collapse_match_similarity(query, candidate_graph)

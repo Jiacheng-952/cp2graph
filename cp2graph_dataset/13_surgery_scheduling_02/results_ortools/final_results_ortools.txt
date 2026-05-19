@@ -1,0 +1,2 @@
+Instance	Status	Time(sec)	Makespan
+data_002.json	Infeasible	0.01	infeasible

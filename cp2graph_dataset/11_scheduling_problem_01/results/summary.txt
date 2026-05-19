@@ -1,0 +1,2 @@
+Instance	Status	Time(sec)	Objective
+employee_assignment_instance_001.json	Infeasible	0.00	NA

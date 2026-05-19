@@ -1,0 +1,499 @@
+{
+  "dataset_root": "cp2graph_dataset",
+  "total_queries": 26,
+  "coarse_top_k": 25,
+  "top1_correct": 21,
+  "top1_accuracy": 0.8076923076923077,
+  "top5_correct": 21,
+  "top5_accuracy": 0.8076923076923077,
+  "rows": [
+    {
+      "query_id": "01_batch_scheduling_problem_01",
+      "query_category": "Batch Scheduling Problem",
+      "query_data": "01_batch_scheduling_problem_01\\data\\generated_instance_01.json",
+      "top1_id": "01_batch_scheduling_problem_02",
+      "top1_category": "Batch Scheduling Problem",
+      "top1_correct": true,
+      "top1_fusion": 0.4753082649819017,
+      "top1_wl": 0.7655071944839761,
+      "top1_ted": 0.1570182394924663,
+      "top1_cm": 0.1570182394924663,
+      "top1_jaccard": 0.8807157057654076,
+      "topk_correct": true,
+      "topk_ids": [
+        "01_batch_scheduling_problem_02",
+        "12_stochastic_job_shop_scheduling_problem_02",
+        "12_stochastic_job_shop_scheduling_problem_01",
+        "11_scheduling_problem_01",
+        "11_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "01_batch_scheduling_problem_02",
+      "query_category": "Batch Scheduling Problem",
+      "query_data": "01_batch_scheduling_problem_02\\data\\generated_instance_02.json",
+      "top1_id": "01_batch_scheduling_problem_01",
+      "top1_category": "Batch Scheduling Problem",
+      "top1_correct": true,
+      "top1_fusion": 0.4753082649819017,
+      "top1_wl": 0.7655071944839761,
+      "top1_ted": 0.1570182394924663,
+      "top1_cm": 0.1570182394924663,
+      "top1_jaccard": 0.8807157057654076,
+      "topk_correct": true,
+      "topk_ids": [
+        "01_batch_scheduling_problem_01",
+        "12_stochastic_job_shop_scheduling_problem_02",
+        "12_stochastic_job_shop_scheduling_problem_01",
+        "11_scheduling_problem_01",
+        "11_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "02_emergency_staff_scheduling_optimization_01",
+      "query_category": "emergency_staff_scheduling_optimization",
+      "query_data": "02_emergency_staff_scheduling_optimization_01\\data\\data_1.json",
+      "top1_id": "02_emergency_staff_scheduling_optimization_02",
+      "top1_category": "emergency_staff_scheduling_optimization",
+      "top1_correct": true,
+      "top1_fusion": 0.7824098336758065,
+      "top1_wl": 0.963282548644203,
+      "top1_ted": 0.6363636363636364,
+      "top1_cm": 0.6464646464646465,
+      "top1_jaccard": 0.9322033898305084,
+      "topk_correct": true,
+      "topk_ids": [
+        "02_emergency_staff_scheduling_optimization_02"
+      ]
+    },
+    {
+      "query_id": "02_emergency_staff_scheduling_optimization_02",
+      "query_category": "emergency_staff_scheduling_optimization",
+      "query_data": "02_emergency_staff_scheduling_optimization_02\\data\\data_10.json",
+      "top1_id": "02_emergency_staff_scheduling_optimization_01",
+      "top1_category": "emergency_staff_scheduling_optimization",
+      "top1_correct": true,
+      "top1_fusion": 0.7824098336758065,
+      "top1_wl": 0.963282548644203,
+      "top1_ted": 0.6363636363636364,
+      "top1_cm": 0.6464646464646465,
+      "top1_jaccard": 0.9322033898305084,
+      "topk_correct": true,
+      "topk_ids": [
+        "02_emergency_staff_scheduling_optimization_01"
+      ]
+    },
+    {
+      "query_id": "03_flexible_job_shop_problem_fjsp_01",
+      "query_category": "Flexible Job Shop Problem (FJSP)",
+      "query_data": "03_flexible_job_shop_problem_fjsp_01\\data\\generate_MK0009.json",
+      "top1_id": "03_flexible_job_shop_problem_fjsp_02",
+      "top1_category": "Flexible Job Shop Problem (FJSP)",
+      "top1_correct": true,
+      "top1_fusion": 0.3938950171856132,
+      "top1_wl": 0.5756196745078315,
+      "top1_ted": 0.13559322033898302,
+      "top1_cm": 0.2135593220338983,
+      "top1_jaccard": 0.6845637583892618,
+      "topk_correct": true,
+      "topk_ids": [
+        "03_flexible_job_shop_problem_fjsp_02"
+      ]
+    },
+    {
+      "query_id": "03_flexible_job_shop_problem_fjsp_02",
+      "query_category": "Flexible Job Shop Problem (FJSP)",
+      "query_data": "03_flexible_job_shop_problem_fjsp_02\\data\\generate_MK0010.json",
+      "top1_id": "03_flexible_job_shop_problem_fjsp_01",
+      "top1_category": "Flexible Job Shop Problem (FJSP)",
+      "top1_correct": true,
+      "top1_fusion": 0.3938950171856132,
+      "top1_wl": 0.5756196745078315,
+      "top1_ted": 0.13559322033898302,
+      "top1_cm": 0.2135593220338983,
+      "top1_jaccard": 0.6845637583892618,
+      "topk_correct": true,
+      "topk_ids": [
+        "03_flexible_job_shop_problem_fjsp_01"
+      ]
+    },
+    {
+      "query_id": "04_flexible_job_shop_problem_with_machine_changeover_times_01",
+      "query_category": "Flexible Job Shop Problem with Machine Changeover Times",
+      "query_data": "04_flexible_job_shop_problem_with_machine_changeover_times_01\\data\\generate_MK001.json",
+      "top1_id": "04_flexible_job_shop_problem_with_machine_changeover_times_02",
+      "top1_category": "Flexible Job Shop Problem with Machine Changeover Times",
+      "top1_correct": true,
+      "top1_fusion": 0.5628076284155441,
+      "top1_wl": 0.983866995851283,
+      "top1_ted": 0.4911587659894658,
+      "top1_cm": 0.4911587659894658,
+      "top1_jaccard": 0.6003589590188454,
+      "topk_correct": true,
+      "topk_ids": [
+        "04_flexible_job_shop_problem_with_machine_changeover_times_02",
+        "01_batch_scheduling_problem_01",
+        "01_batch_scheduling_problem_02",
+        "11_scheduling_problem_02",
+        "11_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "04_flexible_job_shop_problem_with_machine_changeover_times_02",
+      "query_category": "Flexible Job Shop Problem with Machine Changeover Times",
+      "query_data": "04_flexible_job_shop_problem_with_machine_changeover_times_02\\data\\generate_MK002.json",
+      "top1_id": "04_flexible_job_shop_problem_with_machine_changeover_times_01",
+      "top1_category": "Flexible Job Shop Problem with Machine Changeover Times",
+      "top1_correct": true,
+      "top1_fusion": 0.5628076284155441,
+      "top1_wl": 0.983866995851283,
+      "top1_ted": 0.4911587659894658,
+      "top1_cm": 0.4911587659894658,
+      "top1_jaccard": 0.6003589590188454,
+      "topk_correct": true,
+      "topk_ids": [
+        "04_flexible_job_shop_problem_with_machine_changeover_times_01",
+        "01_batch_scheduling_problem_01",
+        "01_batch_scheduling_problem_02",
+        "13_surgery_scheduling_01",
+        "13_surgery_scheduling_02"
+      ]
+    },
+    {
+      "query_id": "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_01",
+      "query_category": "Flexible Job Shop Problem with Setup Times (FJSP-SDST)",
+      "query_data": "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_01\\data\\instance_0001.json",
+      "top1_id": "10_rsp_01",
+      "top1_category": "RSP",
+      "top1_correct": false,
+      "top1_fusion": 0.34578417922763915,
+      "top1_wl": 0.7135081018956736,
+      "top1_ted": 0.12727272727272732,
+      "top1_cm": 0.17727272727272728,
+      "top1_jaccard": 0.4105011933174224,
+      "topk_correct": false,
+      "topk_ids": [
+        "10_rsp_01",
+        "10_rsp_02"
+      ]
+    },
+    {
+      "query_id": "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_02",
+      "query_category": "Flexible Job Shop Problem with Setup Times (FJSP-SDST)",
+      "query_data": "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_02\\data\\instance_0002.json",
+      "top1_id": "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_01",
+      "top1_category": "Flexible Job Shop Problem with Setup Times (FJSP-SDST)",
+      "top1_correct": true,
+      "top1_fusion": 0.3058574984509886,
+      "top1_wl": 0.6759327484913417,
+      "top1_ted": 0.16028708133971292,
+      "top1_cm": 0.17464114832535885,
+      "top1_jaccard": 0.5205761316872428,
+      "topk_correct": true,
+      "topk_ids": [
+        "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_01",
+        "10_rsp_01",
+        "10_rsp_02",
+        "03_flexible_job_shop_problem_fjsp_02",
+        "03_flexible_job_shop_problem_fjsp_01"
+      ]
+    },
+    {
+      "query_id": "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_01",
+      "query_category": "Flexible Resource-Constrained Project Scheduling Problem (FRCPSP)",
+      "query_data": "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_01\\data\\data_01.json",
+      "top1_id": "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_02",
+      "top1_category": "Flexible Resource-Constrained Project Scheduling Problem (FRCPSP)",
+      "top1_correct": true,
+      "top1_fusion": 0.393896574672107,
+      "top1_wl": 0.5704273785952242,
+      "top1_ted": 0.12121212121212122,
+      "top1_cm": 0.21212121212121213,
+      "top1_jaccard": 0.736,
+      "topk_correct": true,
+      "topk_ids": [
+        "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_02"
+      ]
+    },
+    {
+      "query_id": "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_02",
+      "query_category": "Flexible Resource-Constrained Project Scheduling Problem (FRCPSP)",
+      "query_data": "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_02\\data\\data_02.json",
+      "top1_id": "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_01",
+      "top1_category": "Flexible Resource-Constrained Project Scheduling Problem (FRCPSP)",
+      "top1_correct": true,
+      "top1_fusion": 0.393896574672107,
+      "top1_wl": 0.5704273785952242,
+      "top1_ted": 0.12121212121212122,
+      "top1_cm": 0.21212121212121213,
+      "top1_jaccard": 0.736,
+      "topk_correct": true,
+      "topk_ids": [
+        "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_01"
+      ]
+    },
+    {
+      "query_id": "07_job_shop_scheduling_problem_jssp_01",
+      "query_category": "Job Shop Scheduling Problem (JSSP)",
+      "query_data": "07_job_shop_scheduling_problem_jssp_01\\data\\jssp_00001.json",
+      "top1_id": "08_job_shop_scheduling_problem_with_intensity_01",
+      "top1_category": "Job Shop Scheduling Problem with Intensity",
+      "top1_correct": false,
+      "top1_fusion": 0.17469251287642928,
+      "top1_wl": 0.002647673356945601,
+      "top1_ted": 0.07627118644067798,
+      "top1_cm": 0.1228813559322034,
+      "top1_jaccard": 0.7518518518518519,
+      "topk_correct": false,
+      "topk_ids": [
+        "08_job_shop_scheduling_problem_with_intensity_01",
+        "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_02",
+        "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_01",
+        "02_emergency_staff_scheduling_optimization_02",
+        "02_emergency_staff_scheduling_optimization_01"
+      ]
+    },
+    {
+      "query_id": "07_job_shop_scheduling_problem_jssp_02",
+      "query_category": "Job Shop Scheduling Problem (JSSP)",
+      "query_data": "07_job_shop_scheduling_problem_jssp_02\\data\\jssp_00002.json",
+      "top1_id": "11_scheduling_problem_01",
+      "top1_category": "Scheduling Problem",
+      "top1_correct": false,
+      "top1_fusion": 0.11915269734283952,
+      "top1_wl": 0.0,
+      "top1_ted": 0.0,
+      "top1_cm": 0.0,
+      "top1_jaccard": 0.5697674418604651,
+      "topk_correct": false,
+      "topk_ids": [
+        "11_scheduling_problem_01",
+        "11_scheduling_problem_02",
+        "12_stochastic_job_shop_scheduling_problem_02",
+        "12_stochastic_job_shop_scheduling_problem_01",
+        "01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "08_job_shop_scheduling_problem_with_intensity_01",
+      "query_category": "Job Shop Scheduling Problem with Intensity",
+      "query_data": "08_job_shop_scheduling_problem_with_intensity_01\\data\\jsspi_00001.json",
+      "top1_id": "07_job_shop_scheduling_problem_jssp_01",
+      "top1_category": "Job Shop Scheduling Problem (JSSP)",
+      "top1_correct": false,
+      "top1_fusion": 0.17469251287642928,
+      "top1_wl": 0.002647673356945601,
+      "top1_ted": 0.07627118644067798,
+      "top1_cm": 0.1228813559322034,
+      "top1_jaccard": 0.7518518518518519,
+      "topk_correct": false,
+      "topk_ids": [
+        "07_job_shop_scheduling_problem_jssp_01",
+        "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_01",
+        "06_flexible_resource_constrained_project_scheduling_problem_frcpsp_02",
+        "02_emergency_staff_scheduling_optimization_02",
+        "02_emergency_staff_scheduling_optimization_01"
+      ]
+    },
+    {
+      "query_id": "08_job_shop_scheduling_problem_with_intensity_02",
+      "query_category": "Job Shop Scheduling Problem with Intensity",
+      "query_data": "08_job_shop_scheduling_problem_with_intensity_02\\data\\jsspi_00002.json",
+      "top1_id": "09_open_shop_scheduling_problem_01",
+      "top1_category": "Open Shop Scheduling Problem",
+      "top1_correct": false,
+      "top1_fusion": 0.12646087961923722,
+      "top1_wl": 0.0,
+      "top1_ted": 0.0,
+      "top1_cm": 0.0,
+      "top1_jaccard": 0.5869565217391305,
+      "topk_correct": false,
+      "topk_ids": [
+        "09_open_shop_scheduling_problem_01",
+        "09_open_shop_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "09_open_shop_scheduling_problem_01",
+      "query_category": "Open Shop Scheduling Problem",
+      "query_data": "09_open_shop_scheduling_problem_01\\data\\ossp_3j_3m_0010.json",
+      "top1_id": "09_open_shop_scheduling_problem_02",
+      "top1_category": "Open Shop Scheduling Problem",
+      "top1_correct": true,
+      "top1_fusion": 0.40892372843177,
+      "top1_wl": 0.046357615894039736,
+      "top1_ted": 0.30612244897959184,
+      "top1_cm": 0.42857142857142855,
+      "top1_jaccard": 0.873015873015873,
+      "topk_correct": true,
+      "topk_ids": [
+        "09_open_shop_scheduling_problem_02",
+        "08_job_shop_scheduling_problem_with_intensity_02"
+      ]
+    },
+    {
+      "query_id": "09_open_shop_scheduling_problem_02",
+      "query_category": "Open Shop Scheduling Problem",
+      "query_data": "09_open_shop_scheduling_problem_02\\data\\ossp_3j_3m_0031.json",
+      "top1_id": "09_open_shop_scheduling_problem_01",
+      "top1_category": "Open Shop Scheduling Problem",
+      "top1_correct": true,
+      "top1_fusion": 0.40892372843177,
+      "top1_wl": 0.046357615894039736,
+      "top1_ted": 0.30612244897959184,
+      "top1_cm": 0.42857142857142855,
+      "top1_jaccard": 0.873015873015873,
+      "topk_correct": true,
+      "topk_ids": [
+        "09_open_shop_scheduling_problem_01",
+        "08_job_shop_scheduling_problem_with_intensity_02"
+      ]
+    },
+    {
+      "query_id": "10_rsp_01",
+      "query_category": "RSP",
+      "query_data": "10_rsp_01\\data\\中等_1.json",
+      "top1_id": "10_rsp_02",
+      "top1_category": "RSP",
+      "top1_correct": true,
+      "top1_fusion": 0.7357692328369441,
+      "top1_wl": 0.916162489196197,
+      "top1_ted": 0.47045454545454546,
+      "top1_cm": 0.5818181818181818,
+      "top1_jaccard": 0.9631578947368421,
+      "topk_correct": true,
+      "topk_ids": [
+        "10_rsp_02",
+        "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_01"
+      ]
+    },
+    {
+      "query_id": "10_rsp_02",
+      "query_category": "RSP",
+      "query_data": "10_rsp_02\\data\\中等_10.json",
+      "top1_id": "10_rsp_01",
+      "top1_category": "RSP",
+      "top1_correct": true,
+      "top1_fusion": 0.7357692328369441,
+      "top1_wl": 0.916162489196197,
+      "top1_ted": 0.47045454545454546,
+      "top1_cm": 0.5818181818181818,
+      "top1_jaccard": 0.9631578947368421,
+      "topk_correct": true,
+      "topk_ids": [
+        "10_rsp_01",
+        "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_01"
+      ]
+    },
+    {
+      "query_id": "11_scheduling_problem_01",
+      "query_category": "Scheduling Problem",
+      "query_data": "11_scheduling_problem_01\\data\\employee_assignment_instance_001.json",
+      "top1_id": "11_scheduling_problem_02",
+      "top1_category": "Scheduling Problem",
+      "top1_correct": true,
+      "top1_fusion": 0.5449800044631875,
+      "top1_wl": 0.9882874246266091,
+      "top1_ted": 0.5454545454545454,
+      "top1_cm": 0.5454545454545454,
+      "top1_jaccard": 0.7481481481481481,
+      "topk_correct": true,
+      "topk_ids": [
+        "11_scheduling_problem_02",
+        "12_stochastic_job_shop_scheduling_problem_02",
+        "12_stochastic_job_shop_scheduling_problem_01",
+        "03_flexible_job_shop_problem_fjsp_02",
+        "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_01"
+      ]
+    },
+    {
+      "query_id": "11_scheduling_problem_02",
+      "query_category": "Scheduling Problem",
+      "query_data": "11_scheduling_problem_02\\data\\employee_assignment_instance_002.json",
+      "top1_id": "11_scheduling_problem_01",
+      "top1_category": "Scheduling Problem",
+      "top1_correct": true,
+      "top1_fusion": 0.5449800044631875,
+      "top1_wl": 0.9882874246266091,
+      "top1_ted": 0.5454545454545454,
+      "top1_cm": 0.5454545454545454,
+      "top1_jaccard": 0.7481481481481481,
+      "topk_correct": true,
+      "topk_ids": [
+        "11_scheduling_problem_01",
+        "12_stochastic_job_shop_scheduling_problem_02",
+        "12_stochastic_job_shop_scheduling_problem_01",
+        "05_flexible_job_shop_problem_with_setup_times_fjsp_sdst_01",
+        "03_flexible_job_shop_problem_fjsp_02"
+      ]
+    },
+    {
+      "query_id": "12_stochastic_job_shop_scheduling_problem_01",
+      "query_category": "Stochastic Job Shop Scheduling Problem",
+      "query_data": "12_stochastic_job_shop_scheduling_problem_01\\data\\data_1.json",
+      "top1_id": "12_stochastic_job_shop_scheduling_problem_02",
+      "top1_category": "Stochastic Job Shop Scheduling Problem",
+      "top1_correct": true,
+      "top1_fusion": 0.48903314322056074,
+      "top1_wl": 0.5285021502424743,
+      "top1_ted": 0.2651869158878505,
+      "top1_cm": 0.2651869158878505,
+      "top1_jaccard": 0.912621359223301,
+      "topk_correct": true,
+      "topk_ids": [
+        "12_stochastic_job_shop_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "12_stochastic_job_shop_scheduling_problem_02",
+      "query_category": "Stochastic Job Shop Scheduling Problem",
+      "query_data": "12_stochastic_job_shop_scheduling_problem_02\\data\\data_10.json",
+      "top1_id": "12_stochastic_job_shop_scheduling_problem_01",
+      "top1_category": "Stochastic Job Shop Scheduling Problem",
+      "top1_correct": true,
+      "top1_fusion": 0.48903314322056074,
+      "top1_wl": 0.5285021502424743,
+      "top1_ted": 0.2651869158878505,
+      "top1_cm": 0.2651869158878505,
+      "top1_jaccard": 0.912621359223301,
+      "topk_correct": true,
+      "topk_ids": [
+        "12_stochastic_job_shop_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "13_surgery_scheduling_01",
+      "query_category": "surgery scheduling",
+      "query_data": "13_surgery_scheduling_01\\data\\data_001.json",
+      "top1_id": "13_surgery_scheduling_02",
+      "top1_category": "surgery scheduling",
+      "top1_correct": true,
+      "top1_fusion": 0.7663592313463661,
+      "top1_wl": 0.9955606852548525,
+      "top1_ted": 0.544669135099212,
+      "top1_cm": 0.544669135099212,
+      "top1_jaccard": 0.9799120234604105,
+      "topk_correct": true,
+      "topk_ids": [
+        "13_surgery_scheduling_02"
+      ]
+    },
+    {
+      "query_id": "13_surgery_scheduling_02",
+      "query_category": "surgery scheduling",
+      "query_data": "13_surgery_scheduling_02\\data\\data_002.json",
+      "top1_id": "13_surgery_scheduling_01",
+      "top1_category": "surgery scheduling",
+      "top1_correct": true,
+      "top1_fusion": 0.7663592313463661,
+      "top1_wl": 0.9955606852548525,
+      "top1_ted": 0.544669135099212,
+      "top1_cm": 0.544669135099212,
+      "top1_jaccard": 0.9799120234604105,
+      "topk_correct": true,
+      "topk_ids": [
+        "13_surgery_scheduling_01"
+      ]
+    }
+  ]
+}
