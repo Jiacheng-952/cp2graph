@@ -1,0 +1,509 @@
+{
+  "variant_count": 20,
+  "self_top1_correct": 20,
+  "self_top1_accuracy": 1.0,
+  "rows": [
+    {
+      "query_id": "bsp_micro_01_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_01_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_01_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_02_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_02_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 1.0000000000000002,
+      "top5_ids": [
+        "bsp_micro_02_from_01_batch_scheduling_problem_02",
+        "bsp_micro_16_from_01_batch_scheduling_problem_02",
+        "bsp_micro_04_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_03_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_03_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 1.0000000000000002,
+      "top5_ids": [
+        "bsp_micro_03_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01",
+        "bsp_micro_09_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_04_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_04_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 1.0000000000000002,
+      "top5_ids": [
+        "bsp_micro_04_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02",
+        "bsp_micro_10_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_05_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_05_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_05_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_06_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_06_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 1.0,
+      "top5_ids": [
+        "bsp_micro_06_from_01_batch_scheduling_problem_02",
+        "bsp_micro_12_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_18_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_07_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_07_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01",
+        "bsp_micro_19_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_08_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_08_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02",
+        "bsp_micro_10_from_01_batch_scheduling_problem_02",
+        "bsp_micro_16_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_09_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_09_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_09_from_01_batch_scheduling_problem_01",
+        "bsp_micro_19_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_10_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_10_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 1.0,
+      "top5_ids": [
+        "bsp_micro_10_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_16_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_11_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_11_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01",
+        "bsp_micro_19_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_12_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_12_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_12_from_01_batch_scheduling_problem_02",
+        "bsp_micro_06_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_18_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_13_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_13_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_13_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_19_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_14_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_14_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_04_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02",
+        "bsp_micro_16_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_15_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_15_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_15_from_01_batch_scheduling_problem_01",
+        "bsp_micro_09_from_01_batch_scheduling_problem_01",
+        "bsp_micro_01_from_01_batch_scheduling_problem_01",
+        "bsp_micro_05_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_16_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_16_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 1.0,
+      "top5_ids": [
+        "bsp_micro_16_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02",
+        "bsp_micro_02_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01",
+        "bsp_micro_19_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_18_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_18_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 1.0,
+      "top5_ids": [
+        "bsp_micro_18_from_01_batch_scheduling_problem_02",
+        "bsp_micro_12_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_16_from_01_batch_scheduling_problem_02",
+        "bsp_micro_06_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_19_from_01_batch_scheduling_problem_01",
+      "top1_id": "bsp_micro_19_from_01_batch_scheduling_problem_01",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_19_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_20_from_01_batch_scheduling_problem_02",
+      "top1_id": "bsp_micro_20_from_01_batch_scheduling_problem_02",
+      "self_correct": true,
+      "top1_fusion": 0.9999999999999999,
+      "top1_wl": 0.9999999999999999,
+      "top5_ids": [
+        "bsp_micro_20_from_01_batch_scheduling_problem_02",
+        "bsp_micro_10_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_16_from_01_batch_scheduling_problem_02"
+      ]
+    }
+  ],
+  "exclude_self_rows": [
+    {
+      "query_id": "bsp_micro_01_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "fusion": 0.9985588188081936,
+      "wl": 0.998033975257985,
+      "top3_without_self": [
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_02_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_16_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9967075613459825,
+      "wl": 0.9949743887093552,
+      "top3_without_self": [
+        "bsp_micro_16_from_01_batch_scheduling_problem_02",
+        "bsp_micro_04_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_03_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_13_from_01_batch_scheduling_problem_01",
+      "fusion": 0.9962888656072314,
+      "wl": 0.9966488539827583,
+      "top3_without_self": [
+        "bsp_micro_13_from_01_batch_scheduling_problem_01",
+        "bsp_micro_09_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_04_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_14_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9976668950532166,
+      "wl": 0.9966435916645308,
+      "top3_without_self": [
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_05_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "fusion": 0.9986319481725686,
+      "wl": 0.9981372349793401,
+      "top3_without_self": [
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_06_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_12_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9963174800282387,
+      "wl": 0.9950301929950591,
+      "top3_without_self": [
+        "bsp_micro_12_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_18_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_07_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "fusion": 0.999078503750703,
+      "wl": 0.9984081826187088,
+      "top3_without_self": [
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_08_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_14_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9974903218381802,
+      "wl": 0.9970351545955103,
+      "top3_without_self": [
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02",
+        "bsp_micro_10_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_09_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_19_from_01_batch_scheduling_problem_01",
+      "fusion": 0.9967403408347396,
+      "wl": 0.9968163652374178,
+      "top3_without_self": [
+        "bsp_micro_19_from_01_batch_scheduling_problem_01",
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_10_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_20_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9977967983445759,
+      "wl": 0.9970372380019831,
+      "top3_without_self": [
+        "bsp_micro_20_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_11_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "fusion": 0.9991343867013228,
+      "wl": 0.9985775248933142,
+      "top3_without_self": [
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_12_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_06_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9963174800282387,
+      "wl": 0.9950301929950591,
+      "top3_without_self": [
+        "bsp_micro_06_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_18_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_13_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "fusion": 0.998766067254056,
+      "wl": 0.9985436564383932,
+      "top3_without_self": [
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_14_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_04_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9976668950532166,
+      "wl": 0.9966435916645308,
+      "top3_without_self": [
+        "bsp_micro_04_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_15_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_09_from_01_batch_scheduling_problem_01",
+      "fusion": 0.9961755359314527,
+      "wl": 0.9953550990672613,
+      "top3_without_self": [
+        "bsp_micro_09_from_01_batch_scheduling_problem_01",
+        "bsp_micro_01_from_01_batch_scheduling_problem_01",
+        "bsp_micro_05_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_16_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_14_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9971814365999387,
+      "wl": 0.9962570349480592,
+      "top3_without_self": [
+        "bsp_micro_14_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_20_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_11_from_01_batch_scheduling_problem_01",
+      "fusion": 0.9991343867013228,
+      "wl": 0.9985775248933142,
+      "top3_without_self": [
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01",
+        "bsp_micro_13_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_18_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_12_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9957032133791702,
+      "wl": 0.9942442517987294,
+      "top3_without_self": [
+        "bsp_micro_12_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_16_from_01_batch_scheduling_problem_02"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_19_from_01_batch_scheduling_problem_01",
+      "nearest_without_self": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "fusion": 0.9987213608935602,
+      "wl": 0.9984081826187088,
+      "top3_without_self": [
+        "bsp_micro_17_from_01_batch_scheduling_problem_01",
+        "bsp_micro_11_from_01_batch_scheduling_problem_01",
+        "bsp_micro_07_from_01_batch_scheduling_problem_01"
+      ]
+    },
+    {
+      "query_id": "bsp_micro_20_from_01_batch_scheduling_problem_02",
+      "nearest_without_self": "bsp_micro_10_from_01_batch_scheduling_problem_02",
+      "fusion": 0.9977967983445759,
+      "wl": 0.9970372380019831,
+      "top3_without_self": [
+        "bsp_micro_10_from_01_batch_scheduling_problem_02",
+        "bsp_micro_08_from_01_batch_scheduling_problem_02",
+        "bsp_micro_14_from_01_batch_scheduling_problem_02"
+      ]
+    }
+  ]
+}

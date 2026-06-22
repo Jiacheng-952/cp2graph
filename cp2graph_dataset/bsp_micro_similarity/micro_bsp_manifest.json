@@ -1,0 +1,497 @@
+{
+  "dataset_root": "cp2graph_dataset",
+  "out_dir": "cp2graph_dataset/bsp_micro_similarity",
+  "seed": 20260609,
+  "sample_count": 20,
+  "base_ids": [
+    "01_batch_scheduling_problem_01",
+    "01_batch_scheduling_problem_02"
+  ],
+  "candidate_count": 26,
+  "variants": [
+    {
+      "variant_id": "bsp_micro_01_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_01_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 1,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00083",
+            "v_00139",
+            "v_00254"
+          ]
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_02_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_02_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00074",
+            "v_00152",
+            "v_00257"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00274"
+          ]
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_03_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_03_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00012",
+            "v_00150",
+            "v_00283"
+          ]
+        },
+        {
+          "operation": "retag_small_constraint",
+          "constraint_id": "c_00643"
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_04_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_04_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00218",
+            "v_00263",
+            "v_00265"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00086"
+          ]
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_05_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_05_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 1,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00068",
+            "v_00114",
+            "v_00207"
+          ]
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_06_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_06_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 3,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00075",
+            "v_00115",
+            "v_00222"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00059"
+          ]
+        },
+        {
+          "operation": "retag_small_constraint",
+          "constraint_id": "c_00932"
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_07_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_07_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 1,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00038",
+            "v_00171",
+            "v_00266"
+          ]
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_08_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_08_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00019",
+            "v_00203",
+            "v_00250"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00210"
+          ]
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_09_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_09_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00062",
+            "v_00162",
+            "v_00266"
+          ]
+        },
+        {
+          "operation": "retag_small_constraint",
+          "constraint_id": "c_00788"
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_10_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_10_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00180",
+            "v_00211",
+            "v_00240"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00154"
+          ]
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_11_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_11_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 1,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00100",
+            "v_00164",
+            "v_00268"
+          ]
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_12_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_12_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 3,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00049",
+            "v_00138",
+            "v_00151"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00231"
+          ]
+        },
+        {
+          "operation": "retag_small_constraint",
+          "constraint_id": "c_00305"
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_13_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_13_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 1,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00048",
+            "v_00179",
+            "v_00237"
+          ]
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_14_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_14_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00053",
+            "v_00074",
+            "v_00150"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00265"
+          ]
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_15_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_15_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00027",
+            "v_00165",
+            "v_00274"
+          ]
+        },
+        {
+          "operation": "retag_small_constraint",
+          "constraint_id": "c_00266"
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_16_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_16_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00000",
+            "v_00047",
+            "v_00053"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00176"
+          ]
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_17_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_17_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 1,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00247",
+            "v_00262",
+            "v_00268"
+          ]
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_18_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_18_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 3,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00027",
+            "v_00146",
+            "v_00184"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00046"
+          ]
+        },
+        {
+          "operation": "retag_small_constraint",
+          "constraint_id": "c_00907"
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    },
+    {
+      "variant_id": "bsp_micro_19_from_01_batch_scheduling_problem_01",
+      "expected_base_id": "01_batch_scheduling_problem_01",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_19_from_01_batch_scheduling_problem_01.graph.json",
+      "change_count": 1,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00977",
+          "variables": [
+            "v_00093",
+            "v_00099",
+            "v_00182"
+          ]
+        }
+      ],
+      "node_count": 1262,
+      "edge_count": 5178
+    },
+    {
+      "variant_id": "bsp_micro_20_from_01_batch_scheduling_problem_02",
+      "expected_base_id": "01_batch_scheduling_problem_02",
+      "graph_file": "cp2graph_dataset/bsp_micro_similarity/variant_graphs/bsp_micro_20_from_01_batch_scheduling_problem_02.graph.json",
+      "change_count": 2,
+      "changes": [
+        {
+          "operation": "add_local_linear_constraint",
+          "constraint_id": "c_00939",
+          "variables": [
+            "v_00069",
+            "v_00131",
+            "v_00271"
+          ]
+        },
+        {
+          "operation": "add_bool_guard_subgraph",
+          "constraint_id": "c_00940",
+          "variables": [
+            "v_00282",
+            "v_00207"
+          ]
+        }
+      ],
+      "node_count": 1224,
+      "edge_count": 5010
+    }
+  ]
+}
